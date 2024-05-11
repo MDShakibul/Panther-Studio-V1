@@ -6,7 +6,7 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="d-flex align-items-stretch" style={{ borderBottom: '2px solid #3E3A44' }}>
+            <div className="d-flex align-items-stretch" style={{ borderBottom: '2px solid #3e3a44' }}>
     <div className="nav-section-1 py-3 py-lg-4">
         <div className="container">
             <div className="d-flex justify-content-between align-items-center">
@@ -49,6 +49,8 @@ const Navbar = () => {
         <Link href="#" className="custom-nav-link custom-nav-link-pc mb-0 ms-5">Work With Us</Link>
     </div>
 </div>
+
+{/* <div className='w-100' style={{ backgroundColor:'#3E3A44', opacity:'0.1' ,height:'2px'}}></div> */}
 
 
             
