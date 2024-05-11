@@ -42,8 +42,14 @@ const Footer = () => {
               <div className="email-box phone-box get-top">
                 <h1>Need help? Give us a call.</h1>
                 <div className="d-flex align-items-center mt-4 mt-lg-5 mb-2 mb-lg-3">
-                  <div className="dark-line-color" style={{ backgroundColor:'#2E4A45' }}></div>
-                  <div className="light-line-color" style={{ backgroundColor:'#2E4A45', opacity:'0.1' }}></div>
+                  <div
+                    className="dark-line-color"
+                    style={{ backgroundColor: "#2E4A45" }}
+                  ></div>
+                  <div
+                    className="light-line-color"
+                    style={{ backgroundColor: "#2E4A45", opacity: "0.1" }}
+                  ></div>
                 </div>
                 <Link
                   href="tel:+35679418140"
@@ -72,18 +78,14 @@ const Footer = () => {
         </div>
 
         <div className="row">
-
-        <div className="col-lg-4">
-          <h1 className="footer-nav-link-title">We make
-the
-new.</h1>
-        </div>
-        <div className="col-lg-2">
-          <p></p>
-        </div>
-        <div className="col-lg-6"></div>
-        <div className="col-lg-3"></div>
-
+          <div className="col-lg-4">
+            <h1 className="footer-nav-link-title">We make the new.</h1>
+          </div>
+          <div className="col-lg-2">
+            <p>title</p>
+          </div>
+          <div className="col-lg-6"></div>
+          <div className="col-lg-3"></div>
         </div>
       </div>
     </footer>
