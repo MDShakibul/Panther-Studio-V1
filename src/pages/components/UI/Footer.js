@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="footer-area">
+    <footer className="body-area">
       <div className="container">
         <div className="communication-area">
           <div className="row gy-4 px-0 px-lg-4">

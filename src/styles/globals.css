@@ -14,11 +14,13 @@
 .nav-1 {
   width: 80%;
   background-color: #27232c;
+  border-bottom: 2px solid #3e3a44;
   height: 70px;
 }
 .nav-2 {
-  width: 20%;
+  width: 24%;
   background-color: #a5f8d3;
+  border-bottom: 2px solid #a5f8d3;
   height: 70px;
 }
 
@@ -40,7 +42,7 @@
   max-height: 35px;
 }
 .custom-nav-link {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 500;
   color: #bee0d6;
   text-decoration: none;
@@ -58,6 +60,8 @@
   display: none;
 }
 
+
+
 @media only screen and (max-width: 720px) {
   .logo-size {
     width: 100%;
@@ -69,6 +73,10 @@
   }
   .nav-1 {
     width: 100%;
+  }
+  .nav-section-1 {
+    width: 100%;
+    background-color: #27232c;
   }
   .nav-2 {
     display: none;
@@ -134,7 +142,7 @@
 }
 
 /* Footer Section */
-.footer-area {
+.body-area {
   background-color: #27232c;
 }
 
@@ -328,3 +336,6 @@ background:  #BEE0D6;
     margin-top: 30px;
   }
 }
+
+
+/*  */
