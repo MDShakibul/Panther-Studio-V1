@@ -10,6 +10,13 @@
   background-repeat: no-repeat;
   background-position: right top -10px;
 }
+.heroSection2 {
+  background-image: url("../pages/assets/images/bg_hero_section.svg");
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: left top 40px;
+}
 
 .heroSectionArea {
   padding-top: 160px;
@@ -23,6 +30,11 @@
   letter-spacing: -2px;
 }
 
+.heroSectionDivider{
+  margin-bottom: 24px;
+}
+
+
 .responsiveHeroImage {
   border-radius: 4px;
 }
@@ -35,7 +47,7 @@
 }
 .heroSectionTextDetails {
   margin-bottom: 0;
-  color: #bee0d6;
+  color:  rgba(255, 255, 255, 0.60);
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 24px;
@@ -57,4 +69,87 @@
   line-height: 20px;
   letter-spacing: -0.2px;
   text-transform: capitalize;
+}
+
+.heroSectionCompanyTitle{
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 0 20px;
+  color: #BEE0D6;
+  border-right: 2px solid  #3E3A44;
+  border-left: 2px solid  #3E3A44;
+  margin-bottom: 34px;
+
+}
+
+.heroSectionTextDetails2{
+  color:  #BEE0D6;
+font-size: 32px;
+font-weight: 300;
+letter-spacing: -0.64px;
+margin-bottom: 0;
+}
+
+@media only screen and (max-width: 576px) {
+  .heroBodyArea {
+    padding-bottom: 100px;
+  }
+  
+  .heroSection, .heroSection2 {
+    background-image: none;
+  }
+  
+  .heroSectionArea {
+    padding-top: 100px;
+    column-gap: 64px;
+  }
+  
+  .heroSectionTitle {
+    color: #bee0d6;
+    font-size: 48px;
+    font-weight: 300;
+    line-height: 48px;
+    letter-spacing: -0.96px;
+  }
+
+  .heroSectionDivider{
+    margin: 40px 0 20px 0 !important;
+  }
+  
+
+
+  .responsiveHeroImage {
+    border-radius: 4px;
+  }
+  
+  .heroSectionBottomText {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  .heroSectionTextDetails {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .btnHeroSection {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btnHeroSection p {
+    font-size: 16px;
+  }
+
+  .heroSectionCompanyTitle{
+    font-size: 16px;
+    margin-bottom: 34px;
+  
+  }
+  
+  .heroSectionTextDetails2{
+  font-size: 24px;
+  }
 }
