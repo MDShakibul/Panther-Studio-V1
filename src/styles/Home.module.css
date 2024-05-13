@@ -1,3 +1,5 @@
+/* Hero Section */
+
 .heroBodyArea {
   background-color: #27232c;
   padding-bottom: 160px;
@@ -151,5 +153,98 @@ margin-bottom: 0;
   
   .heroSectionTextDetails2{
   font-size: 24px;
+  }
+}
+
+/* Our Portfolio Section */
+.ourPortfolioSection {
+  background-color: #27232c;
+}
+.ourPortfolioArea {
+ padding: 160px 0;
+}
+.ourPortfolioAreaImage {
+ background-image: url("../pages/assets/images/Portfolio-Pattern.png");
+  width: 100%;
+  height: 350px;
+  background-repeat: no-repeat;
+  background-position: right top 0px;
+}
+
+.projectName{
+  color: #BEE0D6;
+font-size: 48px;
+font-weight: 300;
+line-height: 48px; /* 100% */
+letter-spacing: -0.96px;
+margin-top: 30px;
+}
+.projectSummary{
+  color:  rgba(255, 255, 255, 0.60);
+font-size: 18px;
+font-weight: 500;
+line-height: 28px;
+letter-spacing: -0.18px;
+margin: 24px 0;
+}
+.projecTopicDivider{
+  width: 1px;
+height:  20px;
+background-color: #3E3A44;
+margin: 0 20px;
+}
+.projectType{
+  color: #BEE0D6;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.16px;
+margin-bottom: 0;
+}
+
+.profileProjectImage{
+  margin-top: 120px;
+}
+.profileProjectImageDetails{
+  margin-bottom: 120px;
+}
+
+.heroSectionCompanyHeader{
+  margin-bottom: 50px;
+}
+
+
+@media only screen and (max-width: 576px) {
+
+  .ourPortfolioArea {
+   padding: 100px 0;
+  }
+  .ourPortfolioAreaImage {
+   background-image: none;
+  }
+  .heroSectionCompanyHeader{
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  
+  .projectName{
+  font-size: 32px;
+  margin-top: 30px;
+  }
+  .projectSummary{
+  font-size: 14px;
+  margin: 12px 0;
+  }
+
+  .projectType{
+  font-size: 14px;
+  margin-bottom: 0;
+  }
+  
+  .profileProjectImage{
+    margin-top: 40px;
+  }
+  .profileProjectImageDetails{
+    margin-bottom: 40px;
   }
 }
