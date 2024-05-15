@@ -343,7 +343,11 @@ background:  #BEE0D6;
 
 
 /*  */
-
-.v-divider{
-  
+.blue-section {
+  /* margin-top: 10px; */
+    background-color: blue;
+    height: 10%;
+}
+.red-section {
+    height: 80%;
 }

@@ -210,7 +210,7 @@ margin-bottom: 0;
 }
 
 .heroSectionCompanyHeader{
-  margin-bottom: 50px;
+  margin-bottom: 56px;
 }
 
 
@@ -247,4 +247,10 @@ margin-bottom: 0;
   .profileProjectImageDetails{
     margin-bottom: 40px;
   }
+}
+
+
+/* Main focus */
+.mainFocusSection {
+  background-color: #E1EEEC;
 }

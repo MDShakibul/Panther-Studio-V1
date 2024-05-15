@@ -6,6 +6,7 @@ import DummyImage from "../pages/assets/images/dummy-image.svg";
 import Link from "next/link";
 import HeroSection from "./components/UI/HeroSection";
 import OurPortfolio from "./components/UI/OurPortfolio";
+import MainFocus from "./components/UI/MainFocus";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
 
       <HeroSection/>
       <OurPortfolio/>
+      <MainFocus/>
 
       
     </>
