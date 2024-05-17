@@ -19,7 +19,7 @@ const MainFocus = () => {
         </div>
         <h1
           className={`footer-nav-link-title ${style.heroSectionCompanyHeader} w-100 text-center`}
-          style={{ color: "#2E4A45" }}
+          style={{ color: "#2E4A45"}}
         >
           Focused on creating effective websites for client success.
         </h1>

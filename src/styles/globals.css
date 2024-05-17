@@ -248,7 +248,7 @@
   font-weight: 300;
   letter-spacing: -1.6px;
   color: #BEE0D6;
-  width: 50%;
+  width: 60%;
 }
 
 .footer-nav-title{
@@ -342,19 +342,57 @@ background:  #BEE0D6;
 }
 
 
-/*  */
-/* .img-fluid {
-  max-width: 100%;
-  height: auto;
-} */
-
+/* Main Focus */
 .btnHeroSection {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%; /* Ensure it takes up the full height of the parent container */
+  height: 100%;
 }
 
 .middle-link {
-  margin-top: 24px; /* Optional if you want to enforce spacing via CSS */
+  margin-top: 24px; 
 }
+
+
+/* More Info accordion */
+ .accordion-header-hidden {
+          display: none;
+        }
+        .accordion-button::after {
+          content: none;
+        }
+        .accordion-button {
+          display: flex;
+          justify-content: space-between;
+          background-color: #BEE0D6;
+          color: black;
+          border: none;
+          font-size: 1.25rem;
+          padding: 1.5rem 5rem;
+          transition: background-color 1s;
+        }
+        .accordion-button:not(.collapsed) {
+          background-color: #BEE0D6;
+          color: black;
+        }
+        .accordion-body {
+          background-color: red;
+          animation: fadeIn 0.5s;
+        }
+        @keyframes fadeIn {
+          from {
+            opacity: 0;
+          }
+          to {
+            opacity: 1;
+          }
+        }
+        .accordion-item {
+          border: none;
+          margin-bottom: 1rem;
+        }
+        .toggle-icon {
+          cursor: pointer;
+        }
+
