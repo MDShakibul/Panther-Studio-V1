@@ -1,8 +1,9 @@
 import React from "react";
 import style from "../../../styles/Home.module.css";
-import MainFocusImg from "../../assets/images/main-focus-image.svg";
+import MainFocusImg from "../../assets/images/main-focus-image.png";
 import Test from "../../assets/images/test.svg";
 import Image from "next/image";
+import Link from "next/link";
 
 const MainFocus = () => {
   return (
@@ -23,40 +24,61 @@ const MainFocus = () => {
           Focused on creating effective websites for client success.
         </h1>
 
-       {/*  <div className="row">
-            <div className="col-lg-4 d-flex flex-column">
-            <div className="flex-grow-1 h-100">
 
-                <Image src={MainFocusImg} alt="panther-studio"/>
-            </div>
-            </div>
-            <div class="col-md-4 d-flex flex-column">
-                <div class="red-section column flex-grow-1 d-flex justify-content-center">
-                    <Image src={Test} alt="panther-studio"/>
-                </div>
-            <div class="blue-section flex-grow-1">
-                <p>sdf</p>
-            </div>
+
+
+<div className="container">
+  <div className="row gy-5">
+    <div className="col-lg-4 col-md-6 d-flex flex-column order-1">
+      <div className="flex-grow-1 d-flex">
+        <Image
+          src={MainFocusImg}
+          alt="Featured image"
+          layout="intrinsic"
+          className="img-fluid w-100"
+        />
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 d-flex flex-column order-lg-2 order-md-2 order-3">
+      <div className="flex-grow-1 d-flex flex-column">
+        <div className="flex-grow-1 d-flex mb-3">
+          <Image
+            src={MainFocusImg}
+            alt="Featured image"
+            layout="intrinsic"
+            className="img-fluid w-100"
+          />
         </div>
-            <div className="col-lg-4 d-flex flex-column">
-            <div className="flex-grow-1 h-100">
-
-                <Image src={MainFocusImg} alt="panther-studio"/>
-            </div>
-            </div>
-        </div> */}
-
-        <div className="row">
-            <div className="col-lg-4"><Image src={MainFocusImg} alt="panther-studio" layout="responsive"
-        width={500}
-        height={500}/></div>
-            <div className="col-lg-4"><Image src={MainFocusImg} alt="panther-studio" layout="responsive"
-        width={500}
-        height={500}/></div>
-            <div className="col-lg-4"><Image src={MainFocusImg} alt="panther-studio" layout="responsive"
-        width={500}
-        height={500}/></div>
+        <div className="d-flex align-items-center" style={{ height: 'auto' }}>
+          <Link href={""} className={`text-white ${style.btnHeroSection} w-100 text-center d-flex justify-content-between`} style={{ backgroundColor:'#2E4A45' }}>
+            <p className="mb-0 text-white">More about us</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M7 7H17M17 7V17M17 7L7 17" stroke="#E1EEEC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+          </Link>
         </div>
+      </div>
+    </div>
+    <div className="col-lg-4 col-md-6 d-flex flex-column order-lg-3 order-md-3 order-2">
+      <div className="flex-grow-1 d-flex">
+        <Image
+          src={MainFocusImg}
+          alt="Featured image"
+          layout="intrinsic"
+          className="img-fluid w-100"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+      
+
+
 
 
         

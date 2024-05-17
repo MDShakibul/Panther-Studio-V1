@@ -7,6 +7,7 @@ import Link from "next/link";
 import HeroSection from "./components/UI/HeroSection";
 import OurPortfolio from "./components/UI/OurPortfolio";
 import MainFocus from "./components/UI/MainFocus";
+import MoreInfo from "./components/UI/MoreInfo";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
       </Head>
 
       <HeroSection/>
+      <MoreInfo/>
       <OurPortfolio/>
       <MainFocus/>
 

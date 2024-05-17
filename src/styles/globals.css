@@ -343,11 +343,18 @@ background:  #BEE0D6;
 
 
 /*  */
-.blue-section {
-  /* margin-top: 10px; */
-    background-color: blue;
-    height: 10%;
+/* .img-fluid {
+  max-width: 100%;
+  height: auto;
+} */
+
+.btnHeroSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes up the full height of the parent container */
 }
-.red-section {
-    height: 80%;
+
+.middle-link {
+  margin-top: 24px; /* Optional if you want to enforce spacing via CSS */
 }
