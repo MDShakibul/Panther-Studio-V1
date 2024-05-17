@@ -70,10 +70,44 @@ const Accordion = () => {
           >
             <div className="accordion-body">
               This is the content of the first accordion body.
-              <p className="toggle-icon">Hide</p>
+              <p className="toggle-icon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+  <path d="M5 12H19" stroke="#BEE0D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg></p>
             </div>
           </div>
         </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingTwo">
             <button
