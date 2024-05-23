@@ -1,7 +1,6 @@
 import React from "react";
-import style from "../../../styles/Home.module.css";
-import MainFocusImg from "../../assets/images/main-focus-image.png";
-import Test from "../../assets/images/test.svg";
+import style from "@/styles/Home.module.css";
+import MainFocusImg from "@/assets/images/main-focus-image.png";
 import Image from "next/image";
 import Link from "next/link";
 

@@ -1,7 +1,7 @@
 import React from "react";
-import style from "../../../styles/Home.module.css";
+import style from "@/styles/Home.module.css";
 import Image from "next/image";
-import DummyImage from "../../../pages/assets/images/dummy-image.svg";
+import DummyImage from "@/assets/images/dummy-image.svg";
 
 const OurPortfolio = () => {
   return (

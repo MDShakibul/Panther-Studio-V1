@@ -6,14 +6,14 @@
 }
 
 .heroSection {
-  background-image: url("../pages/assets/images/bg_hero_section.svg");
+  background-image: url("../assets/images/bg_hero_section.svg");
   width: 100%;
   height: 350px;
   background-repeat: no-repeat;
   background-position: right top -10px;
 }
 .heroSection2 {
-  background-image: url("../pages/assets/images/bg_hero_section.svg");
+  background-image: url("../assets/images/bg_hero_section.svg");
   width: 100%;
   height: 350px;
   background-repeat: no-repeat;
@@ -30,6 +30,7 @@
   font-weight: 300;
   line-height: 100px;
   letter-spacing: -2px;
+  font-family: 'PolySans Slim';
 }
 
 .heroSectionDivider{
@@ -91,6 +92,7 @@ font-size: 32px;
 font-weight: 300;
 letter-spacing: -0.64px;
 margin-bottom: 0;
+font-family: "PolySans Slim";
 }
 
 @media only screen and (max-width: 576px) {
@@ -164,7 +166,7 @@ margin-bottom: 0;
  padding: 160px 0;
 }
 .ourPortfolioAreaImage {
- background-image: url("../pages/assets/images/Portfolio-Pattern.png");
+ background-image: url("../assets/images/Portfolio-Pattern.png");
   width: 100%;
   height: 350px;
   background-repeat: no-repeat;
@@ -211,6 +213,8 @@ margin-bottom: 0;
 
 .heroSectionCompanyHeader{
   margin-bottom: 56px;
+  font-family: "PolySans Slim";
+  font-weight: 300;
 }
 
 
@@ -225,6 +229,9 @@ margin-bottom: 0;
   .heroSectionCompanyHeader{
     align-items: center;
     margin-bottom: 40px;
+    font-size: 40px;
+    line-height: 40px; /* 100% */
+letter-spacing: -0.8px;
   }
   
   .projectName{

@@ -1,5 +1,5 @@
 import React from "react";
-import style from "../../../styles/Home.module.css";
+import style from "@/styles/Home.module.css";
 import Image from "next/image";
 import Link from "next/link";
 import Accordion from "../Shared/Accordion";

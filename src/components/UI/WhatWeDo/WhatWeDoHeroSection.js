@@ -1,9 +1,27 @@
 import Image from "next/image";
-import DummyImage from "../../../pages/assets/images/dummy-image.svg";
+import DummyImage from "@/assets/images/dummy-image.svg";
 import Link from "next/link";
-import style from "../../../styles/Home.module.css";
+import style from "@/styles/Home.module.css";
+import { useEffect, useState } from "react";
 
-const HeroSection = () => {
+const WhatWeDoHeroSection = () => {
+    const [isMobileView, setIsMobileView] = useState(false);
+    useEffect(() => {
+      function handleResize() {
+        if (window.innerWidth <= 768) {
+          setIsMobileView(false);
+        } else {
+          setIsMobileView(true);
+        }
+      }
+  
+      handleResize();
+  
+      window.addEventListener("resize", handleResize);
+      return () => {
+        window.removeEventListener("resize", handleResize);
+      };
+    }, []);
   return (
     <>
       <div className={`${style.heroBodyArea} h-100`}>
@@ -13,7 +31,7 @@ const HeroSection = () => {
               <div className="col-lg-7 d-flex flex-column">
                 <div className="flex-grow-1 position-relative">
                   <h1 className={`${style.heroSectionTitle}`}>
-                    Let’s collaborate to build your website.
+                    Crafting digital excellence, one website at a time.
                   </h1>
 
                   <div className={`${style.heroSectionBottomText}`}>
@@ -24,13 +42,13 @@ const HeroSection = () => {
                       <div className="light-line-color"></div>
                     </div>
                     <p className={`${style.heroSectionTextDetails}`}>
-                      We believe in developing great client connections,
-                      understanding their vision, and working together with them
-                      to create designs that meet their objectives and
-                      effectively express their brand story.
+                      We specialize in designing captivating websites that
+                      captivate and engage your audience. Our team combines
+                      creativity and expertise to bring your vision to life
+                      online.
                     </p>
                     <Link href={""} className={`${style.btnHeroSection} `}>
-                      <p className="mb-0">Work with us</p>
+                      <p className="mb-0">Our Services</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         width="24"
@@ -54,7 +72,8 @@ const HeroSection = () => {
                 <Image
                   src={DummyImage}
                   alt="panther hero section"
-                  layout="responsive"
+                  layout={isMobileView ? null : "responsive"}
+
                   className={`${style.responsiveHeroImage}`}
                 />
               </div>
@@ -69,33 +88,35 @@ const HeroSection = () => {
               <div className="col-lg-7 d-flex flex-column order-lg-2 order-md-2 order-1 ps-lg-5">
                 <div className="flex-grow-1 position-relative">
                   <p className={`${style.heroSectionCompanyTitle}`}>
-                    Panther Creative Studio
+                    What do we actually create?
                   </p>
 
-                  <p className={`${style.heroSectionTextDetails2} mb-4 mb-lg-0`}>
-                    Born from a passion for design, we envision, design, and
-                    create apps, websites and brands from a seeded idea into a
-                    unique experience. <br /> <br /> From small ambitious start-ups to
-                    industry icons, we strive to create meaningful experiences
-                    for clients all around the world.
+                  <p
+                    className={`${style.heroSectionTextDetails2} mb-4 mb-lg-0`}
+                  >
+                    On the surface, it appears simple. But in reality — not so
+                    much. We can explain. <br />
+                    At Panther Creative Studio, we specialize in crafting
+                    bespoke websites that embody your brand&apos;s goals. Our
+                    team blends creativity with technical prowess to deliver
+                    stunning, user-friendly experiences.
                   </p>
 
                   <div className={`${style.heroSectionBottomText}`}>
-                    
                     <p className={`${style.heroSectionTextDetails2}`}>
-                    We aid big firms, boost small businesses, and empower startups by crafting functional yet stunning products.
+                    From concept to launch, we prioritize communication and collaboration to ensure your vision is brought to life seamlessly. Partner with us to elevate your online presence and leave a lasting impression on your audience.
                     </p>
                   </div>
                 </div>
               </div>
               <div className="col-lg-5 d-flex flex-column custom-gutter order-lg-1 order-md-1 order-2">
                 <div className="row">
-                  <div className="col-lg-2"></div>
+                  <div className="col-lg-1"></div>
                   <div className="col-lg-10">
                     <Image
                       src={DummyImage}
                       alt="panther hero section"
-                      layout="responsive"
+                      layout={isMobileView ? null : "responsive"}
                       className={`${style.responsiveHeroImage}`}
                     />
                   </div>
@@ -109,4 +130,4 @@ const HeroSection = () => {
   );
 };
 
-export default HeroSection;
+export default WhatWeDoHeroSection;

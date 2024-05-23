@@ -1,13 +1,12 @@
 import Head from "next/head";
 
-import RootLayout from "./components/Layouts/RootLayout";
 import Image from "next/image";
-import DummyImage from "../pages/assets/images/dummy-image.svg";
 import Link from "next/link";
-import HeroSection from "./components/UI/HeroSection";
-import OurPortfolio from "./components/UI/OurPortfolio";
-import MainFocus from "./components/UI/MainFocus";
-import MoreInfo from "./components/UI/MoreInfo";
+import HeroSection from "@/components/UI/HeroSection";
+import OurPortfolio from "@/components/UI/OurPortfolio";
+import MainFocus from "@/components/UI/MainFocus";
+import MoreInfo from "@/components/UI/MoreInfo";
+import RootLayout from "@/components/Layouts/RootLayout";
 
 export default function Home() {
   return (

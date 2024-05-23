@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Logo from "@/pages/assets/images/Logo.svg";
+import Logo from "@/assets/images/Logo.svg";
 import { useEffect, useState } from "react";
 
 const Navbar = () => {

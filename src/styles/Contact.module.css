@@ -1,0 +1,69 @@
+.titleMaxLength {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+
+.contactDivArea {
+  border-radius: 4px;
+  background: #e1eeec;
+  padding: 50px 30px;
+  gap: 50px;
+}
+
+.contactSection {
+  color: #2e4a45;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+.contactText {
+  color: #3e3a44;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  opacity: 0.6;
+  margin-bottom: 50px;
+}
+
+.contactNumber {
+  color: #2e4a45;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+}
+
+.contactLink a {
+    margin-right: 24px;
+}
+
+@media only screen and (max-width: 576px) {
+  .contactDivArea {
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .contactSection {
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -0.48px;
+  }
+  .contactText {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    margin-bottom: 40px;
+  }
+  
+  .contactNumber {
+    color: #2e4a45;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.18px;
+  }
+  
+  .contactLink a {
+      margin-right: 14px;
+  }
+}
