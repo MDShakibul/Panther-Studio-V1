@@ -1,44 +1,4 @@
-/* .serviceHeaderTitle{
-    width: 50% !important;
-    padding-bottom: 56px;
-}
 
-.serviceDiscriptionArea{
-padding: 100px 80px;
-gap: 56px;
-border-radius: 4px;
-background: #2E4A45;
-}
-
-.serviceTitle{
- color:  #BEE0D6;
-font-size: 48px;
-font-family: "PolySans Slim";
-font-weight: 300;
-line-height: 48px;
-letter-spacing: -0.96px;
-}
-
-.serviceDetails{
-    color: rgba(255, 255, 255, 0.60);
-font-size: 18px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: -0.18px;
-margin: 56px 0;
-}
-
-
-
-
-.serviceDetailsPoints{
-    color:  #BEE0D6;
-font-size: 20px;
-font-weight: 500;
-line-height: 20px;
-letter-spacing: -0.2px;
-margin-bottom: 0;
-} */
 
 .serviceHeaderTitle {
   width: 50% !important;
@@ -119,29 +79,65 @@ margin-bottom: 0;
 }
 
 /* price info section */
-.priceInfoSection{
-    border-bottom: 2px solid  #3E3A44;
-background:  #27232C;
-    padding: 160px 0;
+.priceInfoSection {
+  border-bottom: 2px solid #3e3a44;
+  background: #27232c;
+  padding: 160px 0;
 }
 
-.priceTitleArea{
-    max-width: 818px;
-    padding-left: 6rem;
+.priceTitleArea {
+  max-width: 818px;
+  padding-left: 6rem;
 }
 
-.serviceDetailsTitle{
-    color: #BEE0D6;
-font-size: 32px;
-font-family: "PolySans Slim";
-font-weight: 300;
-line-height: 40px;
-letter-spacing: -0.64px;
+.serviceDetailsTitle {
+  color: #bee0d6;
+  font-size: 32px;
+  font-family: "PolySans Slim";
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -0.64px;
 }
 
-.priceInfoDetails{
-padding: 50px 30px;
-border-radius: 4px;
-background:  #E1EEEC;
-width: 100%;
+.priceInfoDetails {
+  padding: 50px 30px;
+  border-radius: 4px;
+  background: #e1eeec;
+  width: 100%;
+}
+.priceInfoDetails p {
+  color: #2e4a45;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 576px) {
+  .priceInfoSection {
+    padding: 100px 0;
+  }
+
+  .priceTitleArea {
+    max-width: 90%;
+    padding-left: 0rem;
+  }
+
+  .serviceDetailsTitle {
+    font-size: 24px;
+  }
+
+  .priceInfoDetails {
+    padding: 40px 20px;
+    border-radius: 4px;
+    background: #e1eeec;
+    width: 100%;
+  }
+  .priceInfoDetails p {
+    color: #2e4a45;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+  }
 }

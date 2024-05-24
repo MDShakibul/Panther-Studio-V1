@@ -24,35 +24,40 @@ const Navbar = () => {
   return (
     <>
       {isMobileView ? (
+        <div className="sticky-top">
         <div
-          class="d-flex align-items-stretch position-relative"
+          className="d-flex align-items-stretch position-relative"
         >
-          <div class="nav-1"></div>
-          <div class="nav-2 custom-nav-link-pc"></div>
-          <div class="container-overlay">
-            <div class="container text-white">
+          <div className="nav-1"></div>
+          <div className="nav-2 custom-nav-link-pc"></div>
+          <div className="container-overlay">
+            <div className="container">
               <div className="d-flex justify-content-between align-items-center">
                 <div className="text-white">
-                  <Link href="#">
+                  <Link href="/">
                     <Image src={Logo} alt="logo" className="logo-size" />
                   </Link>
                 </div>
                 <div className="text-white pe-lg-5 d-flex align-items-center">
-                  <Link href="#" className="custom-nav-link mb-0 pe-4">
+                  <Link href="/work" className="custom-nav-link mb-0 pe-4">
                     Work
                   </Link>
-                  <Link href="#" className="custom-nav-link mb-0 pe-4">
+                  <Link href="/what-we-do" className="custom-nav-link mb-0 pe-4">
                     What We Do
                   </Link>
-                  <Link href="#" className="custom-nav-link mb-0 pe-5">
+                  <Link href="/studio" className="custom-nav-link mb-0 pe-5">
                     Studio
                   </Link>
                   <Link
-                    href="#"
-                    className="custom-nav-link custom-nav-link-pc mb-0 ms-5"
+                    href="/contact"
+                    className="custom-nav-link custom-nav-link-pc mb-0 ms-5 custome-nav-background-color extend-bg"
                   >
                     Work With Us
                   </Link>
+
+                  
+
+                  
                   <button
                     className="navbar-toggler collapsed custom-humberger"
                     type="button"
@@ -77,7 +82,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/work"
                     >
                       Work
                     </Link>
@@ -86,7 +91,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/work-we-do"
                     >
                       What We Do
                     </Link>
@@ -95,7 +100,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/studio"
                     >
                       Studio
                     </Link>
@@ -104,7 +109,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/contact"
                     >
                       Work With Us
                     </Link>
@@ -114,26 +119,28 @@ const Navbar = () => {
             </div>
           </div>
         </div>
+        </div>
+        
       ) : (
         <div
-          className="d-flex align-items-stretch"
+          className="d-flex align-items-stretch sticky-top"
         >
           <div className="nav-section-1 py-3 py-lg-4">
             <div className="container">
               <div className="d-flex justify-content-between align-items-center">
                 <div className="text-white nav-logo">
-                  <Link href="#">
+                  <Link href="/">
                     <Image src={Logo} alt="logo" className="logo-size" />
                   </Link>
                 </div>
                 <div className="text-white pe-lg-5 d-flex align-items-center">
-                  <Link href="#" className="custom-nav-link mb-0 pe-4">
+                  <Link href="/work" className="custom-nav-link mb-0 pe-4">
                     Work
                   </Link>
-                  <Link href="#" className="custom-nav-link mb-0 pe-4">
+                  <Link href="/what-we-do" className="custom-nav-link mb-0 pe-4">
                     What We Do
                   </Link>
-                  <Link href="#" className="custom-nav-link mb-0">
+                  <Link href="/studio" className="custom-nav-link mb-0">
                     Studio
                   </Link>
                   <button
@@ -160,7 +167,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/work"
                     >
                       Work
                     </Link>
@@ -169,7 +176,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/what-we-do"
                     >
                       What We Do
                     </Link>
@@ -178,7 +185,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/studio"
                     >
                       Studio
                     </Link>
@@ -187,7 +194,7 @@ const Navbar = () => {
                     <Link
                       className="nav-link mobile-humberger-menu"
                       aria-current="page"
-                      href="#"
+                      href="/contact"
                     >
                       Work With Us
                     </Link>
@@ -198,7 +205,7 @@ const Navbar = () => {
           </div>
           <div className="nav-section-2 justify-content-start">
             <Link
-              href="#"
+              href="/contact"
               className="custom-nav-link custom-nav-link-pc mb-0 ms-5"
             >
               Work With Us

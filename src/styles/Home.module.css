@@ -30,13 +30,12 @@
   font-weight: 300;
   line-height: 100px;
   letter-spacing: -2px;
-  font-family: 'PolySans Slim';
+  font-family: "PolySans Slim";
 }
 
-.heroSectionDivider{
+.heroSectionDivider {
   margin-bottom: 24px;
 }
-
 
 .responsiveHeroImage {
   border-radius: 4px;
@@ -50,7 +49,7 @@
 }
 .heroSectionTextDetails {
   margin-bottom: 0;
-  color:  rgba(255, 255, 255, 0.60);
+  color: rgba(255, 255, 255, 0.6);
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 24px;
@@ -64,51 +63,56 @@
   border-radius: 4px;
   background: #a5f8d3;
   text-decoration: none;
+  cursor: pointer;
+}
+.btnHeroSection.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
 }
 .btnHeroSection p {
   color: #2e4a45;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 20px;
   letter-spacing: -0.2px;
   text-transform: capitalize;
 }
 
-.heroSectionCompanyTitle{
+.heroSectionCompanyTitle {
   display: inline-block;
   font-size: 20px;
   font-weight: 500;
   padding: 0 20px;
-  color: #BEE0D6;
-  border-right: 2px solid  #3E3A44;
-  border-left: 2px solid  #3E3A44;
+  color: #bee0d6;
+  border-right: 2px solid #3e3a44;
+  border-left: 2px solid #3e3a44;
   margin-bottom: 34px;
-
 }
 
-.heroSectionTextDetails2{
-  color:  #BEE0D6;
-font-size: 32px;
-font-weight: 300;
-letter-spacing: -0.64px;
-margin-bottom: 0;
-font-family: "PolySans Slim";
+.heroSectionTextDetails2 {
+  color: #bee0d6;
+  font-size: 32px;
+  font-weight: 300;
+  letter-spacing: -0.64px;
+  margin-bottom: 0;
+  font-family: "PolySans Slim";
 }
 
 @media only screen and (max-width: 576px) {
   .heroBodyArea {
     padding-bottom: 100px;
   }
-  
-  .heroSection, .heroSection2 {
+
+  .heroSection,
+  .heroSection2 {
     background-image: none;
   }
-  
+
   .heroSectionArea {
     padding-top: 100px;
     column-gap: 64px;
   }
-  
+
   .heroSectionTitle {
     color: #bee0d6;
     font-size: 48px;
@@ -117,16 +121,14 @@ font-family: "PolySans Slim";
     letter-spacing: -0.96px;
   }
 
-  .heroSectionDivider{
+  .heroSectionDivider {
     margin: 40px 0 20px 0 !important;
   }
-  
-
 
   .responsiveHeroImage {
     border-radius: 4px;
   }
-  
+
   .heroSectionBottomText {
     position: relative;
     bottom: 0;
@@ -137,7 +139,7 @@ font-family: "PolySans Slim";
     font-size: 14px;
     margin-bottom: 20px;
   }
-  
+
   .btnHeroSection {
     display: flex;
     align-items: center;
@@ -147,14 +149,13 @@ font-family: "PolySans Slim";
     font-size: 16px;
   }
 
-  .heroSectionCompanyTitle{
+  .heroSectionCompanyTitle {
     font-size: 16px;
     margin-bottom: 34px;
-  
   }
-  
-  .heroSectionTextDetails2{
-  font-size: 24px;
+
+  .heroSectionTextDetails2 {
+    font-size: 24px;
   }
 }
 
@@ -163,101 +164,151 @@ font-family: "PolySans Slim";
   background-color: #27232c;
 }
 .ourPortfolioArea {
- padding: 160px 0;
+  padding: 160px 0;
 }
 .ourPortfolioAreaImage {
- background-image: url("../assets/images/Portfolio-Pattern.png");
+  background-image: url("../assets/images/Portfolio-Pattern.png");
   width: 100%;
   height: 350px;
   background-repeat: no-repeat;
   background-position: right top 0px;
 }
 
-.projectName{
-  color: #BEE0D6;
-font-size: 48px;
-font-weight: 300;
-line-height: 48px; /* 100% */
-letter-spacing: -0.96px;
-margin-top: 30px;
+.projectName {
+  color: #bee0d6;
+  font-family: "PolySans Slim" !important;
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 48px; /* 100% */
+  letter-spacing: -0.96px;
+  margin-top: 30px;
 }
-.projectSummary{
-  color:  rgba(255, 255, 255, 0.60);
-font-size: 18px;
-font-weight: 500;
-line-height: 28px;
-letter-spacing: -0.18px;
-margin: 24px 0;
+.projectSummary {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  margin: 24px 0;
 }
-.projecTopicDivider{
+.projecTopicDivider {
   width: 1px;
-height:  20px;
-background-color: #3E3A44;
-margin: 0 20px;
+  height: 20px;
+  background-color: #3e3a44;
+  margin: 0 20px;
 }
-.projectType{
-  color: #BEE0D6;
-font-size: 16px;
-font-weight: 500;
-line-height: 24px;
-letter-spacing: -0.16px;
-margin-bottom: 0;
+.projectType {
+  color: #bee0d6;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.16px;
+  margin-bottom: 0;
 }
 
-.profileProjectImage{
+.profileProjectImage {
   margin-top: 120px;
 }
-.profileProjectImageDetails{
+.profileProjectImageDetails {
   margin-bottom: 120px;
 }
 
-.heroSectionCompanyHeader{
+.heroSectionCompanyHeader {
   margin-bottom: 56px;
   font-family: "PolySans Slim";
   font-weight: 300;
 }
 
-
 @media only screen and (max-width: 576px) {
-
   .ourPortfolioArea {
-   padding: 100px 0;
+    padding: 100px 0;
   }
   .ourPortfolioAreaImage {
-   background-image: none;
+    background-image: none;
   }
-  .heroSectionCompanyHeader{
+  .heroSectionCompanyHeader {
     align-items: center;
     margin-bottom: 40px;
     font-size: 40px;
     line-height: 40px; /* 100% */
-letter-spacing: -0.8px;
-  }
-  
-  .projectName{
-  font-size: 32px;
-  margin-top: 30px;
-  }
-  .projectSummary{
-  font-size: 14px;
-  margin: 12px 0;
+    letter-spacing: -0.8px;
   }
 
-  .projectType{
-  font-size: 14px;
-  margin-bottom: 0;
+  .projectName {
+    font-size: 32px;
+    margin-top: 30px;
   }
-  
-  .profileProjectImage{
+  .projectSummary {
+    font-size: 14px;
+    margin: 12px 0;
+  }
+
+  .projectType {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .profileProjectImage {
     margin-top: 40px;
   }
-  .profileProjectImageDetails{
+  .profileProjectImageDetails {
     margin-bottom: 40px;
   }
 }
 
-
 /* Main focus */
 .mainFocusSection {
-  background-color: #E1EEEC;
+  background-color: #e1eeec;
+}
+
+.homeAccordionTextArea {
+  padding: 80px !important;
+}
+.homeAccordionTextArea div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.closeAccordion{
+  display: none;
+}
+
+.homeAccordionTextAreaTitle {
+  color: #bee0d6;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  margin-bottom: 0px;
+}
+
+.titleBold {
+  color: #bee0d6;
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  opacity: 0.1;
+  margin-top: 50px;
+}
+
+@media only screen and (max-width: 576px) {
+  .topCloseAccordion{
+    display: none !important;
+  }
+  .closeAccordion{
+    display: block;
+  }
+  .homeAccordionTextArea {
+    padding: 20px !important;
+  }
+  .titleBold {
+    font-size: 24px;
+    line-height: 24px; /* 100% */
+letter-spacing: -0.48px;
+    margin-top: 44px;
+  }
+  
 }

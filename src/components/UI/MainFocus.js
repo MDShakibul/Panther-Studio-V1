@@ -52,7 +52,7 @@ const MainFocus = () => {
           <Link href={""} className={`text-white ${style.btnHeroSection} w-100 text-center d-flex justify-content-between`} style={{ backgroundColor:'#2E4A45' }}>
             <p className="mb-0 text-white">More about us</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M7 7H17M17 7V17M17 7L7 17" stroke="#E1EEEC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 7H17M17 7V17M17 7L7 17" stroke="#E1EEEC" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
           </Link>
         </div>

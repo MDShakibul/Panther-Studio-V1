@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import Script from "next/script";
-import { Inter } from "next/font/google";
+import { Manrope } from "next/font/google";
 import Head from "next/head";
-const inter = Inter({ subsets: ["latin"] });
+const manrope = Manrope({ subsets: ["latin"] });
 
 
 export default function App({ Component, pageProps }) {
@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
       />
       </Head>
 
-      <main className={inter.className}>
+      <main className={manrope.className}>
           {getLayout(<Component {...pageProps} />)}
       </main>
 

@@ -68,11 +68,11 @@ const ContactAccordion = () => {
             aria-labelledby="headingOne"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
             <div className="accordion-body-header d-flex justify-content-between align-items-center">
                 <p className="mb-0">01. How are payments made?</p>
                 <p className="toggle-icon mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M5 12H19" stroke="#BEE0D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5 12H19" stroke="#BEE0D6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg></p>
             </div>
 
@@ -141,7 +141,7 @@ const ContactAccordion = () => {
             aria-labelledby="headingTwo"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
               This is the content of the second accordion body.
               <p className="toggle-icon">-</p>
             </div>
@@ -168,7 +168,7 @@ const ContactAccordion = () => {
             aria-labelledby="headingThree"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
               This is the content of the third accordion body.
               <p className="toggle-icon">Hide</p>
             </div>
@@ -195,7 +195,7 @@ const ContactAccordion = () => {
             aria-labelledby="headingFour"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
               This is the content of the fourth accordion body.
               <p className="toggle-icon">Hide</p>
             </div>
@@ -221,7 +221,7 @@ const ContactAccordion = () => {
             aria-labelledby="headingFour"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
               This is the content of the fourth accordion body.
               <p className="toggle-icon">Hide</p>
             </div>
@@ -247,7 +247,7 @@ const ContactAccordion = () => {
             aria-labelledby="headingFour"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
               This is the content of the fourth accordion body.
               <p className="toggle-icon">Hide</p>
             </div>
@@ -273,7 +273,7 @@ const ContactAccordion = () => {
             aria-labelledby="headingFour"
             data-bs-parent="#customAccordion"
           >
-            <div className="accordion-body">
+            <div className="accordion-body contact-accordion-body">
               This is the content of the fourth accordion body.
               <p className="toggle-icon">Hide</p>
             </div>

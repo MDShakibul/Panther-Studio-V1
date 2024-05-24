@@ -49,22 +49,22 @@ const Service = () => {
 
                 <div className="d-flex align-items-center mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                     <p className={`mx-2 ${style.serviceDetailsPoints} `} >Boost site efficiency</p>
                 </div>
                 <div className="d-flex align-items-center mb-3">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                     <p className={`mx-2 ${style.serviceDetailsPoints} `} >Optimized for all devices</p>
                 </div>
                 <div className="d-flex align-items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
                     <p className={`mx-2 ${style.serviceDetailsPoints} `} >Cost-efficient</p>
                 </div>
@@ -114,14 +114,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -141,14 +141,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -168,14 +168,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -227,14 +227,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -254,14 +254,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -281,14 +281,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -334,14 +334,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -361,14 +361,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -388,14 +388,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -437,14 +437,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -464,14 +464,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
@@ -491,14 +491,14 @@ const Service = () => {
                     <path
                       d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333"
                       stroke="#A5F8D3"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />
                     <path
                       d="M18.334 8.33325L12.084 14.5833L10.834 13.3333"
                       stroke="white"
-                      stroke-width="2"
+                      strokeWidth="2"
                       stroke-linecap="round"
                       stroke-linejoin="round"
                     />

@@ -38,7 +38,15 @@ const PriceingInfo = () => {
     <div className="col-lg-7 col-md-6 d-flex flex-column order-1">
       <div className="flex-grow-1 d-flex">
       <div className={`${style.priceInfoDetails}`}>
-        
+
+      <p>First Payment</p>
+      <p style={{ color:'#3E3A44', opacity: '0.6' }}>Deposit - 10%</p>
+      <div className="divider-contact-area"></div>
+      <p>Second Payment</p>
+      <p style={{ color:'#3E3A44', opacity: '0.6' }}>End of design phase - 45%</p>
+      <div className="divider-contact-area"></div>
+      <p>Final Payment</p>
+      <p style={{ color:'#3E3A44', opacity: '0.6' }}>End of build phase - 45%</p>
       </div>
         
       </div>
@@ -57,7 +65,7 @@ const PriceingInfo = () => {
           <Link href={""} className={`${homeStyle.btnHeroSection} w-100 text-center d-flex justify-content-between`} >
             <p className="mb-0">Start A Project</p>
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M7 7H17M17 7V17M17 7L7 17" stroke="#2E4A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M7 7H17M17 7V17M17 7L7 17" stroke="#2E4A45" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
           </Link>
         </div>

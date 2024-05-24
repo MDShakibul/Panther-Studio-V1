@@ -3,6 +3,12 @@ import Link from "next/link";
 import React from "react";
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Smooth scroll
+    });
+  };
   return (
     <footer className="body-area">
       <div className="container">
@@ -83,32 +89,32 @@ const Footer = () => {
           </div>
           <div className="col-lg-2 col-md-6 col-sm-12 col-12 footer-mobile">
             <p className="footer-nav-title">Links</p>
-            <p className="footer-nav">Home</p>
-            <p className="footer-nav">Work</p>
-            <p className="footer-nav">What We Do</p>
-            <p className="footer-nav">Studio</p>
-            <p className="footer-nav">Contact</p>
+            <Link href={'/'} className="footer-nav">Home</Link>
+            <Link href={'/work'} className="footer-nav">Work</Link>
+            <Link href={'/what-we-do'} className="footer-nav">What We Do</Link>
+            <Link href={'/studio'} className="footer-nav">Studio</Link>
+            <Link href={'contact'} className="footer-nav">Contact</Link>
           </div>
           <div className="col-lg-4 col-md-6 col-sm-12 col-12 footer-mobile">
           <p className="footer-nav-title">Our Services</p>
-            <p className="footer-nav">UI/UX Design</p>
-            <p className="footer-nav">Website Development</p>
-            <p className="footer-nav">E-Commerce Development</p>
-            <p className="footer-nav">Hosting & Support</p>
+            <Link href={'#'} className="footer-nav">UI/UX Design</Link>
+            <Link href={'#'} className="footer-nav">Website Development</Link>
+            <Link href={'#'} className="footer-nav">E-Commerce Development</Link>
+            <Link href={'#'} className="footer-nav">Hosting & Support</Link>
           </div>
           <div className="col-lg-3 col-md-6 col-sm-12 col-12 footer-mobile">
           <p className="footer-nav-title">Get in Touch</p>
-            <p className="footer-nav">(+356) 7941 8140</p>
-            <p className="footer-nav">pantherstudio@gmail.com</p>
+            <Link href="tel:+35679418140" className="footer-nav d-block">(+356) 7941 8140</Link>
+            <Link href="mailto:webmaster@example.com" className="footer-nav d-block">pantherstudio@gmail.com</Link>
           </div>
         </div>
       </div>
 
       <div className="container d-flex justify-content-end">
 
-      <div className="go-to-top">
+      <div className="go-to-top" onClick={scrollToTop}>
       <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M15 12.5L10 7.5L5 12.5" stroke="#2E4A45" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15 12.5L10 7.5L5 12.5" stroke="#2E4A45" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
       </div>
 
@@ -148,9 +154,9 @@ const Footer = () => {
               
 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
   <g clip-path="url(#clip0_4_961)">
-    <path d="M9.99935 18.3327C14.6017 18.3327 18.3327 14.6017 18.3327 9.99935C18.3327 5.39698 14.6017 1.66602 9.99935 1.66602C5.39698 1.66602 1.66602 5.39698 1.66602 9.99935C1.66602 14.6017 5.39698 18.3327 9.99935 18.3327Z" stroke="#BEE0D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M15.9417 4.24121C12.6833 7.61621 8.33333 8.69954 1.875 9.11621M18.125 10.6995C12.6083 9.52454 8.00833 11.5329 4.475 15.9662" stroke="#BEE0D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M7.13281 2.29102C10.7745 7.29102 12.1328 10.141 13.7995 17.0577" stroke="#BEE0D6" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M9.99935 18.3327C14.6017 18.3327 18.3327 14.6017 18.3327 9.99935C18.3327 5.39698 14.6017 1.66602 9.99935 1.66602C5.39698 1.66602 1.66602 5.39698 1.66602 9.99935C1.66602 14.6017 5.39698 18.3327 9.99935 18.3327Z" stroke="#BEE0D6" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M15.9417 4.24121C12.6833 7.61621 8.33333 8.69954 1.875 9.11621M18.125 10.6995C12.6083 9.52454 8.00833 11.5329 4.475 15.9662" stroke="#BEE0D6" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M7.13281 2.29102C10.7745 7.29102 12.1328 10.141 13.7995 17.0577" stroke="#BEE0D6" strokeWidth="1.5" stroke-linecap="round" stroke-linejoin="round"/>
   </g>
   <defs>
     <clipPath id="clip0_4_961">

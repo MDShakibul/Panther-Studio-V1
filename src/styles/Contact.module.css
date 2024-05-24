@@ -32,6 +32,7 @@
   font-weight: 500;
   line-height: 28px;
   letter-spacing: -0.18px;
+  text-decoration: none;
 }
 
 .contactLink a {
@@ -66,4 +67,32 @@
   .contactLink a {
       margin-right: 14px;
   }
+}
+
+.errorMessage {
+  color: #dc3545; /* Bootstrap's .text-danger color */
+  font-size: 0.875rem; /* Equivalent to small size */
+  margin-top: 0.25rem; /* Space between the field and the error message */
+}
+
+.formField {
+  margin-bottom: 1.5rem; /* Space between fields */
+}
+
+.formField input,
+.formField select,
+.formField textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+
+.formField input:focus,
+.formField select:focus,
+.formField textarea:focus {
+  border-color: #80bdff;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
 }

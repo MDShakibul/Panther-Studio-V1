@@ -4,6 +4,8 @@ import Link from "next/link";
 import style from "@/styles/Home.module.css";
 
 const HeroSection = () => {
+
+
   return (
     <>
       <div className={`${style.heroBodyArea} h-100`}>
@@ -29,7 +31,7 @@ const HeroSection = () => {
                       to create designs that meet their objectives and
                       effectively express their brand story.
                     </p>
-                    <Link href={""} className={`${style.btnHeroSection} `}>
+                    <Link href={"/contact"} className={`${style.btnHeroSection} `}>
                       <p className="mb-0">Work with us</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -41,7 +43,7 @@ const HeroSection = () => {
                         <path
                           d="M7 7H17M17 7V17M17 7L7 17"
                           stroke="#2E4A45"
-                          stroke-width="2"
+                          strokeWidth="2"
                           stroke-linecap="round"
                           stroke-linejoin="round"
                         />

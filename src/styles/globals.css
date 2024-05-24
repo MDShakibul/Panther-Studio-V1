@@ -167,6 +167,7 @@
   margin-top: -160px;
 }
 .email-box {
+  
   border-radius: 4px;
   background: #2e4a45;
   padding: 80px;
@@ -176,9 +177,13 @@
   color: #2e4a45;
 }
 .phone-box h1 {
+  font-family: "PolySans Slim";
+  font-size: 300;
   width: 80%;
 }
 .email-box h1 {
+  font-family: "PolySans Slim";
+  font-size: 300;
   font-size: 48px;
   font-weight: 300;
 }
@@ -247,10 +252,11 @@
 
 .footer-nav-link-title {
   font-size: 80px;
-  font-weight: 300;
   letter-spacing: -1.6px;
   color: #bee0d6;
   width: 60%;
+  font-family: "PolySans Slim";
+  font-size: 300;
 }
 
 .footer-nav-title {
@@ -261,10 +267,14 @@
 }
 
 .footer-nav {
+  display: block;
   font-size: 24px;
-  font-weight: 300;
+  font-family: "PolySans Slim";
+  font-size: 300;
   margin-bottom: 20px;
   color: #bee0d6;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer-bottom-divider {
@@ -297,6 +307,7 @@
   border-top-right-radius: 4px;
   transform: rotate(-360deg);
   background: #bee0d6;
+  cursor: pointer;
 }
 
 .header-title-top {
@@ -387,7 +398,10 @@
   background-color: #bee0d6;
   color: black;
 }
-.accordion-body {
+.accordion-collapse{
+  background-color: #E1EEEC !important;
+}
+.contact-accordion-body {
   padding: 50px 80px 64px 80px;
   background-color: #2e4a45;
   color: #bee0d6;
@@ -435,6 +449,7 @@
   }
   .accordion-body {
     padding: 20px;
+    background-color: transparent !important;
   }
   .accordion-body-header {
     margin-bottom: 20px;
@@ -711,3 +726,83 @@
     font-size: 14px;
   }
 }
+
+
+
+
+/* change here when make it responsive */
+.overlay-content-container {
+  position: absolute;
+  top: 63%;
+  left: 6%;
+  right: 24%;
+  transform: translateY(-50%);
+  background-color: white;
+  color: black;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.overlay-first-col, .overlay-sec-col, .overlay-third-col{
+  padding: 64px 30px;
+}
+.overlay-sec-col{
+  border-right: 1px solid  #BEE0D6;
+border-left: 1px solid  #BEE0D6;
+}
+.overlay-title{
+  color:  #2E4A45;
+  font-family: "PolySans Slim";
+font-size: 24px;
+font-weight: 300;
+line-height: 24px;
+letter-spacing: -0.48px;
+margin: 24px 0 20px 0;
+}
+.overlay-details{
+  color:  #27232C;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: -0.16px;
+opacity: 0.6;
+}
+
+@media only screen and (max-width: 576px) {
+  .content-left{
+    min-height: 703px;
+  }
+  .overlay-content-container {
+    top: 44%;
+    left: 6%;
+    right: 5%;
+}
+.overlay-first-col, .overlay-sec-col, .overlay-third-col{
+  padding: 40px 20px;
+  margin-left: 12px;
+}
+
+.overlay-sec-col{
+  border-right: none !important;
+border-left: none !important;
+  border-top: 1px solid  #BEE0D6;
+border-bottom: 1px solid  #BEE0D6;
+}
+
+.overlay-title{
+font-size: 20px;
+line-height: 20px; /* 100% */
+letter-spacing: -0.4px;
+margin: 24px 0 10px 0;
+}
+.overlay-details{
+  color:  #27232C;
+font-size: 14px;
+font-weight: 500;
+line-height: 24px; /* 171.429% */
+letter-spacing: -0.14px;
+}
+}
+
+
