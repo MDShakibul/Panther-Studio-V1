@@ -3,6 +3,8 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import ContactHero from "@/components/UI/Contact/ContactHero";
 import Questions from "@/components/UI/Contact/Questions";
 import WhatWeDoHeroSection from "@/components/UI/WhatWeDo/WhatWeDoHeroSection";
+import Service from "@/components/UI/WhatWeDo/Service";
+import PriceingInfo from "@/components/UI/WhatWeDo/PriceingInfo";
 
 export default function WhatWeDo() {
   return (
@@ -16,6 +18,8 @@ export default function WhatWeDo() {
       </Head>
 
       <WhatWeDoHeroSection/>
+      <Service/>
+      <PriceingInfo/>
 
       
     </>
