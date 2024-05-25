@@ -46,7 +46,7 @@ const MoreInfo = () => {
                 d="M7 7H17M17 7V17M17 7L7 17"
                 stroke="#E1EEEC"
                 strokeWidth="2"
-                stroke-linecap="round"
+                strokeLinecap="round"
                 stroke-linejoin="round"
               />
             </svg>

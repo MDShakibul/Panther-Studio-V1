@@ -33,6 +33,28 @@
   height: 70px;
 }
 
+.custom-nav-bg-link {
+  position: relative;
+  padding: 20px 20px; /* Adjust padding as needed */
+  color: white; /* Text color */
+  text-decoration: none; /* Remove underline */
+  z-index: 1; /* Ensure it's above the pseudo-element */
+}
+.extend-bg::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: -150px; /* Extend to the far right */
+  background-color: #a5f8d3; /* Background color */
+  z-index: -1; /* Ensure it is behind the link text */
+}
+@media (max-width: 992px) {
+  .extend-bg::after {
+    right: 0px;
+  }
+}
 .container-overlay {
   position: absolute;
   top: 0;

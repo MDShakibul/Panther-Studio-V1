@@ -4,8 +4,6 @@ import Link from "next/link";
 import style from "@/styles/Home.module.css";
 
 const HeroSection = () => {
-
-
   return (
     <>
       <div className={`${style.heroBodyArea} h-100`}>
@@ -31,7 +29,10 @@ const HeroSection = () => {
                       to create designs that meet their objectives and
                       effectively express their brand story.
                     </p>
-                    <Link href={"/contact"} className={`${style.btnHeroSection} `}>
+                    <Link
+                      href={"/contact"}
+                      className={`${style.btnHeroSection} `}
+                    >
                       <p className="mb-0">Work with us</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +45,7 @@ const HeroSection = () => {
                           d="M7 7H17M17 7V17M17 7L7 17"
                           stroke="#2E4A45"
                           strokeWidth="2"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           stroke-linejoin="round"
                         />
                       </svg>
@@ -74,18 +75,20 @@ const HeroSection = () => {
                     Panther Creative Studio
                   </p>
 
-                  <p className={`${style.heroSectionTextDetails2} mb-4 mb-lg-0`}>
+                  <p
+                    className={`${style.heroSectionTextDetails2} mb-4 mb-lg-0`}
+                  >
                     Born from a passion for design, we envision, design, and
                     create apps, websites and brands from a seeded idea into a
-                    unique experience. <br /> <br /> From small ambitious start-ups to
-                    industry icons, we strive to create meaningful experiences
-                    for clients all around the world.
+                    unique experience. <br /> <br /> From small ambitious
+                    start-ups to industry icons, we strive to create meaningful
+                    experiences for clients all around the world.
                   </p>
 
                   <div className={`${style.heroSectionBottomText}`}>
-                    
                     <p className={`${style.heroSectionTextDetails2}`}>
-                    We aid big firms, boost small businesses, and empower startups by crafting functional yet stunning products.
+                      We aid big firms, boost small businesses, and empower
+                      startups by crafting functional yet stunning products.
                     </p>
                   </div>
                 </div>

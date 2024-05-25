@@ -6,24 +6,24 @@ import style from "@/styles/Contact.module.css";
 import { useState } from "react";
 
 const ContactHero = () => {
-  const [firstName, setFirstName] = useState('')
-  const [lastName, setLastName] = useState('')
-  const [email, setEmail] = useState('')
-  const [phone, setPhone] = useState('')
-  const [businessName, setBusinessName] = useState('')
-  const [timeLine, setTimeLine] = useState('')
-  const [budget, setBudget] = useState('€3k')
-  const [description, setDescription] = useState('');
-  const [isDisabled, setIsDisable] = useState(true)
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [businessName, setBusinessName] = useState("");
+  const [timeLine, setTimeLine] = useState("");
+  const [budget, setBudget] = useState("€500 - €5,000");
+  const [description, setDescription] = useState("");
+  const [isDisabled, setIsDisable] = useState(true);
   const [errors, setErrors] = useState({});
   const [isChecked, setIsChecked] = useState(0);
 
   const handleValidation = () => {
     const newErrors = {};
-    if (!firstName) newErrors.firstName = 'Please fill up this field';
-    if (!lastName) newErrors.lastName = 'Please fill up this field';
-    if (!email) newErrors.email = 'Please fill up this field';
-    if (!phone) newErrors.phone = 'Please fill up this field';
+    if (!firstName) newErrors.firstName = "Please fill up this field";
+    if (!lastName) newErrors.lastName = "Please fill up this field";
+    if (!email) newErrors.email = "Please fill up this field";
+    if (!phone) newErrors.phone = "Please fill up this field";
     return newErrors;
   };
 
@@ -32,14 +32,14 @@ const ContactHero = () => {
     setIsDisable(e.target.checked ? false : true);
   };
 
-  const handleSendMail = () =>{
+  const handleSendMail = () => {
     const validationErrors = handleValidation();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
       return 0;
-    } 
+    }
     setErrors({});
-    console.log(
+    /* console.log(
       firstName,
       lastName,
       email,
@@ -47,9 +47,39 @@ const ContactHero = () => {
       businessName,
       timeLine,
       budget,
-      description,)
-  }
-  
+      description,) */
+    const emailInfo = {
+      firstName,
+      lastName,
+      email,
+      phone,
+      businessName,
+      timeLine,
+      budget,
+      description,
+    };
+
+    fetch("http://localhost:5000/send-mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(emailInfo),
+    })
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Network response was not ok " + response.statusText);
+        }
+        return response.json();
+      })
+      .then((data) => {
+        console.log("Success:", data);
+      })
+      .catch((error) => {
+        console.error("There was a problem with the fetch operation:", error);
+      });
+  };
+
   return (
     <>
       <div className={`${homeStyle.heroBodyArea} h-100`}>
@@ -74,7 +104,10 @@ const ContactHero = () => {
                       exceptional service.
                     </p>
                     <div className="d-flex justify-content-between align-items-center">
-                      <Link href="tel:+35679418140" className={`mb-0 ${style.contactNumber}`}>
+                      <Link
+                        href="tel:+35679418140"
+                        className={`mb-0 ${style.contactNumber}`}
+                      >
                         (+356) 7941 8140
                       </Link>
                       <svg
@@ -88,14 +121,17 @@ const ContactHero = () => {
                           d="M7 7H17M17 7V17M17 7L7 17"
                           stroke="#2E4A45"
                           strokeWidth="2"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           stroke-linejoin="round"
                         />
                       </svg>
                     </div>
                     <div className="divider-contact-area"></div>
                     <div className="d-flex justify-content-between align-items-center">
-                      <Link href="mailto:webmaster@example.com" className={`mb-0 ${style.contactNumber}`}>
+                      <Link
+                        href="mailto:webmaster@example.com"
+                        className={`mb-0 ${style.contactNumber}`}
+                      >
                         pantherstudio@gmail.com
                       </Link>
                       <svg
@@ -109,7 +145,7 @@ const ContactHero = () => {
                           d="M7 7H17M17 7V17M17 7L7 17"
                           stroke="#2E4A45"
                           strokeWidth="2"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           stroke-linejoin="round"
                         />
                       </svg>
@@ -119,7 +155,7 @@ const ContactHero = () => {
                     <div
                       className={`d-flex align-items-center ${style.contactLink}`}
                     >
-                      <Link href={""}>
+                      <Link href={"https://www.facebook.com/pantherstudiocreations"} target="_blank">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -134,7 +170,7 @@ const ContactHero = () => {
                         </svg>
                       </Link>
 
-                      <Link href={""}>
+                      <Link href={"https://www.instagram.com/thepanther.studio/"} target="_blank">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -149,7 +185,7 @@ const ContactHero = () => {
                         </svg>
                       </Link>
 
-                      <Link href={""}>
+                      <Link href={"#"}>
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -164,7 +200,7 @@ const ContactHero = () => {
                         </svg>
                       </Link>
 
-                      <Link href={""}>
+                      <Link href={"https://dribbble.com/pantherstudiocreations/"} target="_blank">
                         <svg
                           xmlns="http://www.w3.org/2000/svg"
                           width="20"
@@ -172,26 +208,26 @@ const ContactHero = () => {
                           viewBox="0 0 20 20"
                           fill="none"
                         >
-                          <g clip-path="url(#clip0_4_1681)">
+                          <g clipPath="url(#clip0_4_1681)">
                             <path
                               d="M9.99935 18.3327C14.6017 18.3327 18.3327 14.6017 18.3327 9.99935C18.3327 5.39698 14.6017 1.66602 9.99935 1.66602C5.39698 1.66602 1.66602 5.39698 1.66602 9.99935C1.66602 14.6017 5.39698 18.3327 9.99935 18.3327Z"
                               stroke="#2E4A45"
                               strokeWidth="1.5"
-                              stroke-linecap="round"
+                              strokeLinecap="round"
                               stroke-linejoin="round"
                             />
                             <path
                               d="M15.9417 4.24121C12.6833 7.61621 8.33333 8.69954 1.875 9.11621M18.125 10.6995C12.6083 9.52454 8.00833 11.5329 4.475 15.9662"
                               stroke="#2E4A45"
                               strokeWidth="1.5"
-                              stroke-linecap="round"
+                              strokeLinecap="round"
                               stroke-linejoin="round"
                             />
                             <path
                               d="M7.13281 2.29102C10.7745 7.29102 12.1328 10.141 13.7995 17.0577"
                               stroke="#2E4A45"
                               strokeWidth="1.5"
-                              stroke-linecap="round"
+                              strokeLinecap="round"
                               stroke-linejoin="round"
                             />
                           </g>
@@ -221,7 +257,13 @@ const ContactHero = () => {
                           First name <span style={{ color: "#A5F8D3" }}>*</span>
                         </label>
 
-                        {errors.firstName && <small className={`text-danger ${style.errorMessage}`}>{errors.firstName}</small>}
+                        {errors.firstName && (
+                          <small
+                            className={`text-danger ${style.errorMessage}`}
+                          >
+                            {errors.firstName}
+                          </small>
+                        )}
                       </div>
                     </div>
                     <div className="col-lg-6">
@@ -231,13 +273,19 @@ const ContactHero = () => {
                           className="input-field"
                           placeholder=" "
                           value={lastName}
-        onChange={(e) => setLastName(e.target.value)}
+                          onChange={(e) => setLastName(e.target.value)}
                           required
                         />
                         <label className="input-label">
                           Last name <span style={{ color: "#A5F8D3" }}>*</span>
                         </label>
-                        {errors.lastName && <small className={`text-danger ${style.errorMessage}`}>{errors.lastName}</small>}
+                        {errors.lastName && (
+                          <small
+                            className={`text-danger ${style.errorMessage}`}
+                          >
+                            {errors.lastName}
+                          </small>
+                        )}
                       </div>
                     </div>
                     <div className="col-lg-6">
@@ -247,14 +295,20 @@ const ContactHero = () => {
                           className="input-field"
                           placeholder=" "
                           value={email}
-        onChange={(e) => setEmail(e.target.value)}
+                          onChange={(e) => setEmail(e.target.value)}
                           required
                         />
                         <label className="input-label">
                           Email address{" "}
                           <span style={{ color: "#A5F8D3" }}>*</span>
                         </label>
-                        {errors.email && <small className={`text-danger ${style.errorMessage}`}>{errors.email}</small>}
+                        {errors.email && (
+                          <small
+                            className={`text-danger ${style.errorMessage}`}
+                          >
+                            {errors.email}
+                          </small>
+                        )}
                       </div>
                     </div>
                     <div className="col-lg-6">
@@ -264,14 +318,20 @@ const ContactHero = () => {
                           className="input-field"
                           placeholder=" "
                           value={phone}
-        onChange={(e) => setPhone(e.target.value)}
+                          onChange={(e) => setPhone(e.target.value)}
                           required
                         />
                         <label className="input-label">
                           Phone number{" "}
                           <span style={{ color: "#A5F8D3" }}>*</span>
                         </label>
-                        {errors.phone && <small className={`text-danger ${style.errorMessage}`}>{errors.phone}</small>}
+                        {errors.phone && (
+                          <small
+                            className={`text-danger ${style.errorMessage}`}
+                          >
+                            {errors.phone}
+                          </small>
+                        )}
                       </div>
                     </div>
                     <div className="col-lg-12">
@@ -281,7 +341,7 @@ const ContactHero = () => {
                           className="input-field"
                           placeholder=" "
                           value={businessName}
-        onChange={(e) => setBusinessName(e.target.value)}
+                          onChange={(e) => setBusinessName(e.target.value)}
                         />
                         <label className="input-label">Business name </label>
                       </div>
@@ -293,7 +353,7 @@ const ContactHero = () => {
                           className="input-field"
                           placeholder=" "
                           value={timeLine}
-        onChange={(e) => setTimeLine(e.target.value)}
+                          onChange={(e) => setTimeLine(e.target.value)}
                         />
                         <label className="input-label">
                           Your timeline expectation?
@@ -303,12 +363,14 @@ const ContactHero = () => {
 
                     <div className="col-lg-6">
                       <div className="input-container">
-                        <select className="dropdown-select" value={budget}
-        onChange={(e) => setBudget(e.target.value)}>
-                          <option value="€3k">€3k</option>
-                          <option value="€5k">€5k</option>
-                          <option value="€7k">€7k</option>
-                          <option value="€9k">€9k</option>
+                        <select
+                          className="dropdown-select"
+                          value={budget}
+                          onChange={(e) => setBudget(e.target.value)}
+                        >
+                          <option value="€500 - €5,000">€500 - €5,000</option>
+                          <option value="€5,000 - €15,000">€5,000 - €15,000</option>
+                          <option value="€15,000 - €50,000">€15,000 - €50,000</option>
                         </select>
                         <label className="dropdown-label">
                           Your budget expectation?
@@ -325,7 +387,7 @@ const ContactHero = () => {
                               d="M6 9L12 15L18 9"
                               stroke="#A5F8D3"
                               strokeWidth="2"
-                              stroke-linecap="round"
+                              strokeLinecap="round"
                               stroke-linejoin="round"
                             />
                           </svg>
@@ -338,7 +400,7 @@ const ContactHero = () => {
                           className="textarea-field"
                           placeholder=" "
                           value={description}
-          onChange={(e) => setDescription(e.target.value)}
+                          onChange={(e) => setDescription(e.target.value)}
                         ></textarea>
                         <label className="textarea-label">
                           Describe the project in your words
@@ -346,50 +408,60 @@ const ContactHero = () => {
                       </div>
                     </div>
                     <div className="col-lg-12">
-                    <div className="checkbox-container">
-      <input
-        type="checkbox"
-        className="checkbox-input"
-        id="custom-checkbox"
-        onChange={handleCheckboxChange}
-      />
-      <label
-        htmlFor="custom-checkbox"
-        className="custom-checkbox"
-      ></label>
-      <label htmlFor="custom-checkbox" className="checkbox-label">
-        I agree to the <span style={{ color:'#A5F8D3' }}>Privacy Policy.</span>
-      </label>
-      <p>Checkbox value: {isChecked}</p> {/* Display the current state value */}
-    </div>
-                    </div>
-
-<div>
-
-<div
-      className={`${homeStyle.btnHeroSection} ${isDisabled ? homeStyle.disabled : ''}`}
-      onClick={handleSendMail}
-      style={{ pointerEvents: isDisabled ? 'none' : 'auto', opacity: isDisabled ? 0.5 : 1 }}
-    >
-                      <p className="mb-0">Send Inquiry</p>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                      >
-                        <path
-                          d="M7 7H17M17 7V17M17 7L7 17"
-                          stroke="#2E4A45"
-                          strokeWidth="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
+                      <div className="checkbox-container">
+                        <input
+                          type="checkbox"
+                          className="checkbox-input"
+                          id="custom-checkbox"
+                          onChange={handleCheckboxChange}
                         />
-                      </svg>
+                        <label
+                          htmlFor="custom-checkbox"
+                          className="custom-checkbox"
+                        ></label>
+                        <label
+                          htmlFor="custom-checkbox"
+                          className="checkbox-label"
+                        >
+                          I agree to the{" "}
+                          <span style={{ color: "#A5F8D3" }}>
+                            Privacy Policy.
+                          </span>
+                        </label>
+                        <p>Checkbox value: {isChecked}</p>{" "}
+                        {/* Display the current state value */}
+                      </div>
                     </div>
-</div>
 
+                    <div>
+                      <div
+                        className={`${homeStyle.btnHeroSection} ${
+                          isDisabled ? homeStyle.disabled : ""
+                        }`}
+                        onClick={handleSendMail}
+                        style={{
+                          pointerEvents: isDisabled ? "none" : "auto",
+                          opacity: isDisabled ? 0.5 : 1,
+                        }}
+                      >
+                        <p className="mb-0">Send Inquiry</p>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                        >
+                          <path
+                            d="M7 7H17M17 7V17M17 7L7 17"
+                            stroke="#2E4A45"
+                            strokeWidth="2"
+                            strokeLinecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>

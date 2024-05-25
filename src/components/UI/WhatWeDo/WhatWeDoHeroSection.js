@@ -5,23 +5,23 @@ import style from "@/styles/Home.module.css";
 import { useEffect, useState } from "react";
 
 const WhatWeDoHeroSection = () => {
-    const [isMobileView, setIsMobileView] = useState(false);
-    useEffect(() => {
-      function handleResize() {
-        if (window.innerWidth <= 768) {
-          setIsMobileView(false);
-        } else {
-          setIsMobileView(true);
-        }
+  const [isMobileView, setIsMobileView] = useState(false);
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth <= 768) {
+        setIsMobileView(false);
+      } else {
+        setIsMobileView(true);
       }
-  
-      handleResize();
-  
-      window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
-      };
-    }, []);
+    }
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <>
       <div className={`${style.heroBodyArea} h-100`}>
@@ -60,7 +60,7 @@ const WhatWeDoHeroSection = () => {
                           d="M7 7H17M17 7V17M17 7L7 17"
                           stroke="#2E4A45"
                           strokeWidth="2"
-                          stroke-linecap="round"
+                          strokeLinecap="round"
                           stroke-linejoin="round"
                         />
                       </svg>
@@ -73,7 +73,6 @@ const WhatWeDoHeroSection = () => {
                   src={DummyImage}
                   alt="panther hero section"
                   layout={isMobileView ? null : "responsive"}
-
                   className={`${style.responsiveHeroImage}`}
                 />
               </div>
@@ -104,7 +103,10 @@ const WhatWeDoHeroSection = () => {
 
                   <div className={`${style.heroSectionBottomText}`}>
                     <p className={`${style.heroSectionTextDetails2}`}>
-                    From concept to launch, we prioritize communication and collaboration to ensure your vision is brought to life seamlessly. Partner with us to elevate your online presence and leave a lasting impression on your audience.
+                      From concept to launch, we prioritize communication and
+                      collaboration to ensure your vision is brought to life
+                      seamlessly. Partner with us to elevate your online
+                      presence and leave a lasting impression on your audience.
                     </p>
                   </div>
                 </div>

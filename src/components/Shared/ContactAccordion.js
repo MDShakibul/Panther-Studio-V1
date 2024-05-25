@@ -59,7 +59,8 @@ const ContactAccordion = () => {
               aria-expanded="true"
               aria-controls="collapseOne"
             >
-              01. How are payments made? <span className="accordion-title">+</span>
+              01. How are payments made?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div
@@ -69,58 +70,43 @@ const ContactAccordion = () => {
             data-bs-parent="#customAccordion"
           >
             <div className="accordion-body contact-accordion-body">
-            <div className="accordion-body-header d-flex justify-content-between align-items-center">
+              <div className="accordion-body-header d-flex justify-content-between align-items-center">
                 <p className="mb-0">01. How are payments made?</p>
-                <p className="toggle-icon mb-0"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-  <path d="M5 12H19" stroke="#BEE0D6" strokeWidth="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg></p>
-            </div>
+                <p className="toggle-icon mb-0">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M5 12H19"
+                      stroke="#BEE0D6"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </p>
+              </div>
 
-            <div className="accordion-body-details">
-            <p className="mb-4">
-            We believe that the best person to guide you is the person actively working on your project. So, during the design process, you&apos;ll be in direct contact with the designer.
-            </p>
+              <div className="accordion-body-details">
+                <p className="mb-4">
+                  We believe that the best person to guide you is the person
+                  actively working on your project. So, during the design
+                  process, you&apos;ll be in direct contact with the designer.
+                </p>
 
-            <p className="mb-0">During the build, you&apos;ll have the developer on speed dial. And, when it comes to the write-up, your copywriter is only an email away.</p>
-
-
-
-            </div>
-              
+                <p className="mb-0">
+                  During the build, you&apos;ll have the developer on speed
+                  dial. And, when it comes to the write-up, your copywriter is
+                  only an email away.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingTwo">
@@ -132,7 +118,8 @@ const ContactAccordion = () => {
               aria-expanded="false"
               aria-controls="collapseTwo"
             >
-              02. Who manages the design and build process? <span className="accordion-title">+</span>
+              02. Who manages the design and build process?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div
@@ -148,7 +135,6 @@ const ContactAccordion = () => {
           </div>
         </div>
 
-
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingThree">
             <button
@@ -159,7 +145,8 @@ const ContactAccordion = () => {
               aria-expanded="false"
               aria-controls="collapseThree"
             >
-              03. How much do I pay upfront? <span className="accordion-title">+</span>
+              03. How much do I pay upfront?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div
@@ -175,7 +162,6 @@ const ContactAccordion = () => {
           </div>
         </div>
 
-
         <div className="accordion-item">
           <h2 className="accordion-header" id="headingFour">
             <button
@@ -186,7 +172,8 @@ const ContactAccordion = () => {
               aria-expanded="false"
               aria-controls="collapseFour"
             >
-              04. Can I have support after the project is live? <span className="accordion-title">+</span>
+              04. Can I have support after the project is live?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div
@@ -212,7 +199,8 @@ const ContactAccordion = () => {
               aria-expanded="false"
               aria-controls="collapseFive"
             >
-              05. What if I want to make adjustments after it’s built? <span className="accordion-title">+</span>
+              05. What if I want to make adjustments after it’s built?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div
@@ -238,7 +226,8 @@ const ContactAccordion = () => {
               aria-expanded="false"
               aria-controls="collapseSix"
             >
-              06. Do I have to pay VAT? <span className="accordion-title">+</span>
+              06. Do I have to pay VAT?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div
@@ -264,7 +253,8 @@ const ContactAccordion = () => {
               aria-expanded="false"
               aria-controls="collapseSeven"
             >
-              07. Can I use a third-party for hosting? <span className="accordion-title">+</span>
+              07. Can I use a third-party for hosting?{" "}
+              <span className="accordion-title">+</span>
             </button>
           </h2>
           <div

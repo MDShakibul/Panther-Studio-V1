@@ -48,12 +48,14 @@ const Navbar = () => {
                   <Link href="/studio" className="custom-nav-link mb-0 pe-5">
                     Studio
                   </Link>
+                  <div className="custom-nav-bg-link">
                   <Link
                     href="/contact"
                     className="custom-nav-link custom-nav-link-pc mb-0 ms-5 custome-nav-background-color extend-bg"
                   >
                     Work With Us
                   </Link>
+                  </div>
 
                   
 
