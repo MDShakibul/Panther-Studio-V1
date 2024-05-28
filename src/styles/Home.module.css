@@ -59,11 +59,13 @@
   display: inline-flex;
   padding: 20px;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
   border-radius: 4px;
   background: #a5f8d3;
   text-decoration: none;
   cursor: pointer;
+  text-transform: capitalize;
 }
 .btnHeroSection.disabled {
   cursor: not-allowed;
@@ -84,8 +86,8 @@
   font-weight: 500;
   padding: 0 20px;
   color: #bee0d6;
-  border-right: 2px solid #3e3a44;
-  border-left: 2px solid #3e3a44;
+  border-right: 2px solid #BEE0D6;
+  border-left: 2px solid #BEE0D6;
   margin-bottom: 34px;
 }
 
@@ -96,6 +98,10 @@
   letter-spacing: -0.64px;
   margin-bottom: 0;
   font-family: "PolySans Slim";
+}
+.workTitleArea {
+  max-width: 1030px;
+  padding-left: 6rem;
 }
 
 @media only screen and (max-width: 576px) {
@@ -156,6 +162,10 @@
 
   .heroSectionTextDetails2 {
     font-size: 24px;
+  }
+  .workTitleArea {
+    max-width: 90%;
+    padding-left: 0rem;
   }
 }
 
@@ -294,6 +304,16 @@
   margin-top: 50px;
 }
 
+.workDetails {
+  color:  #2E4A45;
+font-size: 32px;
+font-style: normal;
+font-weight: 300;
+line-height: 40px;
+letter-spacing: -0.64px;
+margin-bottom: 40px;
+}
+
 @media only screen and (max-width: 576px) {
   .topCloseAccordion{
     display: none !important;
@@ -309,6 +329,13 @@
     line-height: 24px; /* 100% */
 letter-spacing: -0.48px;
     margin-top: 44px;
+  }
+
+  .workDetails {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+    margin-bottom: 20px;
   }
   
 }

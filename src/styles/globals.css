@@ -471,7 +471,7 @@
   }
   .accordion-body {
     padding: 20px;
-    background-color: transparent !important;
+    /* background-color: transparent !important; */
   }
   .accordion-body-header {
     margin-bottom: 20px;
@@ -791,6 +791,10 @@ letter-spacing: -0.16px;
 opacity: 0.6;
 }
 
+.work-header-title-bottom{
+  padding-bottom: 80px;
+}
+
 @media only screen and (max-width: 576px) {
   .content-left{
     min-height: 703px;
@@ -824,6 +828,9 @@ font-size: 14px;
 font-weight: 500;
 line-height: 24px; /* 171.429% */
 letter-spacing: -0.14px;
+}
+.work-header-title-bottom{
+  padding-bottom: 40px;
 }
 }
 

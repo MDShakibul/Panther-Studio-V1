@@ -1,0 +1,125 @@
+.titleMaxLength {
+  max-width: 1030px;
+  margin: 0 auto;
+}
+.topImage {
+  margin-top: 56px;
+}
+
+.collaborationHeaderTitle {
+  max-width: 818px !important;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 56px;
+}
+
+.btnCollaborationDetails {
+  border-radius: 4px;
+  display: flex;
+  padding: 24px 50px;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+.btnCollaborationDetails p {
+  font-family: "PolySans Slim";
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+
+.collaborationDetails {
+  border-radius: 4px;
+  background: #2e4a45;
+  padding: 64px 50px;
+}
+
+.Active {
+  background: #2e4a45;
+}
+.Active p {
+  color: #bee0d6;
+}
+.Inactive {
+  background: #bee0d6;
+}
+.Inctive p {
+  color: #2e4a45;
+}
+
+.collaborationInfo {
+  color: #bee0d6;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.2px;
+  margin-bottom: 56px;
+}
+.collaborationInfoDetails {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+}
+
+/* get in touch section */
+.getInTouchArea {
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 50px 80px;
+  margin-top: 56px;
+}
+.touchDetails{
+  color: #2E4A45;
+font-family: "PolySans Slim";
+font-size: 32px;
+font-weight: 300;
+line-height: 40px; 
+letter-spacing: -0.64px;
+}
+
+@media only screen and (max-width: 576px) {
+  .collaborationHeaderTitle {
+    max-width: 818px !important;
+    width: 90% !important;
+    margin-bottom: 40px;
+  }
+  .btnCollaborationDetails {
+    padding: 20px;
+  }
+  .btnCollaborationDetails p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+  }
+  
+  .collaborationDetails {
+    padding: 40px 20px;
+    margin-top: 16px !important;
+  }
+  .collaborationInfo {
+    font-size: 16px;
+    line-height: 16px;
+    letter-spacing: -0.16px;
+    margin-bottom:20px;
+  }
+  .collaborationInfoDetails {
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.14px;
+  }
+
+  .getInTouchArea {
+    padding: 40px 20px;
+    margin-top:40px;
+  }
+  .touchDetails{
+  font-size: 24px;
+  line-height: 32px; 
+  letter-spacing: -0.48px;
+  margin-bottom: 24px;
+  }
+}

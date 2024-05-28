@@ -4,6 +4,7 @@ import Link from "next/link";
 import homeStyle from "@/styles/Home.module.css";
 import style from "@/styles/Contact.module.css";
 import { useState } from "react";
+import Swal from "sweetalert2";
 
 const ContactHero = () => {
   const [firstName, setFirstName] = useState("");
@@ -39,15 +40,6 @@ const ContactHero = () => {
       return 0;
     }
     setErrors({});
-    /* console.log(
-      firstName,
-      lastName,
-      email,
-      phone,
-      businessName,
-      timeLine,
-      budget,
-      description,) */
     const emailInfo = {
       firstName,
       lastName,
@@ -59,7 +51,8 @@ const ContactHero = () => {
       description,
     };
 
-    fetch("http://localhost:5000/send-mail", {
+   //fetch("http://localhost:5000/send-mail", {
+    fetch("https://web3-backend-chi.vercel.app/send-mail", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -68,12 +61,38 @@ const ContactHero = () => {
     })
       .then((response) => {
         if (!response.ok) {
-          throw new Error("Network response was not ok " + response.statusText);
+          Swal.fire({
+            position: 'center',
+            icon: 'error',
+            text: 'Network response not ok. Please try again.',
+            showConfirmButton: false,
+            timer: 2000,
+            allowOutsideClick: false,
+            allowEscapeKey: false,
+          });
         }
         return response.json();
       })
       .then((data) => {
-        console.log("Success:", data);
+        Swal.fire({
+          position: 'center',
+          icon: 'success',
+          text: 'Email Sent. We will contact you soon.',
+          showConfirmButton: false,
+          timer: 2000,
+          allowOutsideClick: false,
+          allowEscapeKey: false,
+        });
+        setFirstName('');
+        setLastName('');
+        setEmail('');
+        setPhone('');
+        setBusinessName('');
+        setDescription('');
+        setTimeLine('');
+        setIsDisable(true);
+        setIsChecked(0);
+
       })
       .catch((error) => {
         console.error("There was a problem with the fetch operation:", error);
@@ -318,7 +337,10 @@ const ContactHero = () => {
                           className="input-field"
                           placeholder=" "
                           value={phone}
-                          onChange={(e) => setPhone(e.target.value)}
+                          onChange={(e) => {
+                            const mobileNumber = e.target.value.replace(/[^0-9]/g, '');
+                            setPhone(mobileNumber);
+                            }}
                           required
                         />
                         <label className="input-label">
@@ -413,6 +435,7 @@ const ContactHero = () => {
                           type="checkbox"
                           className="checkbox-input"
                           id="custom-checkbox"
+                          checked={isChecked === 1}
                           onChange={handleCheckboxChange}
                         />
                         <label

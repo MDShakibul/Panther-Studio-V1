@@ -2,6 +2,8 @@ import "@/styles/globals.css";
 import Script from "next/script";
 import { Manrope } from "next/font/google";
 import Head from "next/head";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const manrope = Manrope({ subsets: ["latin"] });
 
 

@@ -114,7 +114,22 @@
   margin-bottom: 0px;
 }
 
+.contactNumber {
+  color: #2e4a45;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: -0.18px;
+  text-decoration: none;
+}
 @media only screen and (max-width: 576px) {
+  .contactNumber {
+    color: #2e4a45;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: -0.18px;
+  }
   .priceInfoSection {
     padding: 100px 0;
   }

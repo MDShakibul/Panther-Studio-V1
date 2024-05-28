@@ -1,27 +1,26 @@
 import Head from "next/head";
 import RootLayout from "@/components/Layouts/RootLayout";
-import ContactHero from "@/components/UI/Contact/ContactHero";
-import Questions from "@/components/UI/Contact/Questions";
+import WorkHeroSection from "@/components/UI/Work/WorkHeroSection";
+import MoreThan from "@/components/UI/Work/MoreThan";
 
-export default function Contact() {
+export default function Work() {
   return (
     <>
       <Head>
-        <title>Contact - Panther Studio</title>
+        <title>Work - Panther Studio</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
       </Head>
 
-      <ContactHero/>
-      <Questions />
-
+    <WorkHeroSection/>
+    <MoreThan/>
       
     </>
   );
 }
 
-Contact.getLayout = function getLayout(page) {
+Work.getLayout = function getLayout(page) {
   return <RootLayout>{page}</RootLayout>;
 };

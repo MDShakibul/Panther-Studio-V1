@@ -24,60 +24,6 @@ const Service = () => {
           Fresh designs, expertly crafted.
         </h1>
 
-        {/* <div className="row g-4">
-          <div className="col-lg-7 col-md-7 col-sm-12 col-12 d-flex flex-column">
-            <div className="flex-grow-1">
-              <div className={`${style.serviceDiscriptionArea} `}>
-                <h1 className={`${style.serviceTitle} `}>1. UI/UX Design</h1>
-                <p className={`${style.serviceDetails} `}>
-                  UI/UX design focuses on enhancing user satisfaction by
-                  improving the usability, accessibility, and overall experience
-                  of a digital product. At Panther Creative Studio, we offer
-                  UI/UX design services to ensure that every interaction with
-                  your website or application is intuitive and seamless. Our
-                  team meticulously considers user needs and behaviors, crafting
-                  interfaces that are not only visually appealing but also
-                  highly functional.
-                  <br />
-                  <br />
-                  By prioritizing user-centric design principles, we empower
-                  businesses to create meaningful connections with their
-                  audience and achieve their goals effectively. Partner with us
-                  to elevate your digital presence and leave a lasting
-                  impression on your users.
-                </p>
-
-                <div className="d-flex align-items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
-  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
-</svg>
-                    <p className={`mx-2 ${style.serviceDetailsPoints} `} >Boost site efficiency</p>
-                </div>
-                <div className="d-flex align-items-center mb-3">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
-  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
-</svg>
-                    <p className={`mx-2 ${style.serviceDetailsPoints} `} >Optimized for all devices</p>
-                </div>
-                <div className="d-flex align-items-center">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-  <path d="M14.9993 5L5.83268 14.1667L1.66602 10M18.3327 8.33333L12.0827 14.5833L10.8327 13.3333" stroke="#A5F8D3" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
-  <path d="M18.334 8.33325L12.084 14.5833L10.834 13.3333" stroke="white" strokeWidth="2" strokeLinecap="round" stroke-linejoin="round"/>
-</svg>
-                    <p className={`mx-2 ${style.serviceDetailsPoints} `} >Cost-efficient</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-5 col-md-5 col-sm-12 col-12 d-flex flex-column">
-          <div className="flex-grow-1">
-
-            <Image src={dummy} alt="service" layout=""/>
-          </div>
-          </div>
-        </div> */}
 
         <div className="container">
           <div className="row g-3 d-flex align-items-stretch">
