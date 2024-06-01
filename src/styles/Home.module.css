@@ -274,6 +274,9 @@
 .homeAccordionTextArea {
   padding: 80px !important;
 }
+.homeAccordionTextArea2 {
+  padding: 80px 0 80px 80px !important;
+}
 .homeAccordionTextArea div {
   display: flex;
   justify-content: space-between;
@@ -303,6 +306,16 @@
   opacity: 0.1;
   margin-top: 50px;
 }
+.titleBold2 {
+  color: #bee0d6;
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 50px;
+  letter-spacing: -1px;
+  text-transform: uppercase;
+  opacity: 0.1;
+  margin-top: 50px;
+}
 
 .workDetails {
   color:  #2E4A45;
@@ -324,11 +337,25 @@ margin-bottom: 40px;
   .homeAccordionTextArea {
     padding: 20px !important;
   }
+  .homeAccordionTextArea2 {
+    padding: 20px 0 20px 20px !important;
+  }
+  .homeAccordionTextArea2Title{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px !important;
+  }
   .titleBold {
     font-size: 24px;
+    line-height: 24px; 
+letter-spacing: -0.48px;
+    margin-top: 55px;
+  }
+  .titleBold2 {
+    font-size: 22px;
     line-height: 24px; /* 100% */
 letter-spacing: -0.48px;
-    margin-top: 44px;
+    margin-top: 50px;
   }
 
   .workDetails {

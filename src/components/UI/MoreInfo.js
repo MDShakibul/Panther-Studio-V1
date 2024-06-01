@@ -30,7 +30,7 @@ const MoreInfo = () => {
           style={{ height: "auto", marginTop: "40px" }}
         >
           <Link
-            href={""}
+            href={"/what-we-do"}
             className={`text-white ${style.btnHeroSection} text-center `}
             style={{ backgroundColor: "#2E4A45" }}
           >

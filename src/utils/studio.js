@@ -6,17 +6,17 @@ export function collaboration(active) {
     case "passion":
       title = "Our Passion";
       details =
-        "At Panther, our passion for designing and developing websites drives every project we undertake. We are dedicated to crafting unique, user-centric digital experiences that exceed expectations and leave a lasting impact.";
+        "At The Panther Studio, our passion for designing and developing websites drives every project we undertake. We are dedicated to crafting unique, user-centric digital experiences that exceed expectations and leave a lasting impact.";
       break;
     case "commitment":
       title = "Our Commitment";
       details =
-        "At Panther, our commitment to excellence ensures that every project is handled with the utmost care and professionalism. We strive to deliver top-quality digital solutions that meet and exceed client expectations.";
+        "The Panther Studio's foundation lies in our unwavering dedication to grasp the distinct requirements of each client. We prioritize forging enduring partnerships based on trust and shared advancement..";
       break;
     case "quality":
       title = "Our Quality";
       details =
-        "At Panther, our unwavering focus on quality is evident in every aspect of our work. We aim to deliver superior websites that not only look great but also perform flawlessly.";
+        "At The Panther Studio, we uphold that excellence is the result of meticulous attention to detail. Every code line, pixel, and strategy undergoes rigorous quality assurance, elevating projects from good to outstanding.";
       break;
     default:
       title = "Our Focus";

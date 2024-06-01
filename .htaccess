@@ -1,8 +1,17 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
   RewriteBase /
-  RewriteRule ^index\.html$ - [L]
+
+  # Skip processing for existing files and directories
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
   RewriteCond %{REQUEST_FILENAME} !-f
   RewriteCond %{REQUEST_FILENAME} !-d
-  RewriteRule . /index.html [L]
-</IfModule
+  RewriteRule ^([^/.]+)$ $1.html [L]
+
+ 
+  RewriteCond %{THE_REQUEST} \s/([^.]+)\.html [NC]
+  RewriteRule ^ /%1 [R=301,L]
+</IfModule>
