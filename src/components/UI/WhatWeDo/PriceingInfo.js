@@ -44,7 +44,7 @@ const PriceingInfo = () => {
             <p className={` mt-1 ${style.serviceDetails}`}>
               We uphold transparency in our payment procedures to avoid any
               misunderstandings. A{" "}
-              <span className="text-white">10% initial deposit</span> is
+              <span className="text-white">30% initial deposit</span> is
               mandatory, followed by invoicing for subsequent payments at the
               completion of each project phase. Payments are typically divided
               into two phases: upon completion of design and upon website
@@ -52,23 +52,23 @@ const PriceingInfo = () => {
               delivery with assurance..
             </p>
 
-            <div className="row gy-5">
+            {/* <div className="row gy-5">
               <div className="col-lg-7 col-md-6 d-flex flex-column order-1">
                 <div className="flex-grow-1 d-flex">
                   <div className={`${style.priceInfoDetails}`}>
                     <p>First Payment</p>
                     <p style={{ color: "#3E3A44", opacity: "0.6" }}>
-                      Deposit - 10%
+                      Deposit - 30%
                     </p>
                     <div className="divider-contact-area"></div>
                     <p>Second Payment</p>
                     <p style={{ color: "#3E3A44", opacity: "0.6" }}>
-                      End of design phase - 45%
+                      End of design phase - 30%
                     </p>
                     <div className="divider-contact-area"></div>
                     <p>Final Payment</p>
                     <p style={{ color: "#3E3A44", opacity: "0.6" }}>
-                      End of build phase - 45%
+                      End of build phase - 40%
                     </p>
                   </div>
                 </div>
@@ -111,7 +111,70 @@ const PriceingInfo = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
+
+            <div className="row gy-5 align-items-stretch">
+  <div className="col-lg-7 col-md-6 d-flex flex-column order-1">
+    <div className="flex-grow-1 d-flex justify-content-center align-items-stretch">
+      <div className={`${style.priceInfoDetails}`}>
+        <p>First Payment</p>
+        <p style={{ color: "#3E3A44", opacity: "0.6" }}>
+          Deposit - 30%
+        </p>
+        <div className="divider-contact-area"></div>
+        <p>Second Payment</p>
+        <p style={{ color: "#3E3A44", opacity: "0.6" }}>
+          End of design phase - 30%
+        </p>
+        <div className="divider-contact-area"></div>
+        <p>Final Payment</p>
+        <p style={{ color: "#3E3A44", opacity: "0.6" }}>
+          End of build phase - 40%
+        </p>
+      </div>
+    </div>
+  </div>
+  <div className="col-lg-5 col-md-6 d-flex flex-column order-lg-2 order-md-2 order-3">
+    <div className="flex-grow-1 d-flex flex-column">
+      <div className="flex-grow-1 d-flex mb-3">
+        <Image
+          src={priceInfo}
+          alt="Featured image"
+          layout="intrinsic"
+          className="img-fluid w-100"
+        />
+      </div>
+      <div
+        className="d-flex align-items-center"
+        style={{ height: "auto" }}
+      >
+        <Link
+          href={""}
+          className={`${homeStyle.btnHeroSection} w-100 text-center d-flex justify-content-between btn-animated btn-1`}
+        >
+          <p className="mb-0">Start A Project</p>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+          >
+            <path
+              d="M7 7H17M17 7V17M17 7L7 17"
+              stroke="#2E4A45"
+              strokeWidth="2"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
+        </Link>
+      </div>
+    </div>
+  </div>
+</div>
+
+
           </div>
           <div className="col-lg-1"></div>
         </div>

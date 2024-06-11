@@ -51,7 +51,7 @@ const MainFocus = () => {
                 >
                   <Link
                     href={""}
-                    className={`text-white ${style.btnHeroSection} w-100 text-center d-flex justify-content-between`}
+                    className={`text-white ${style.btnHeroSection} w-100 text-center d-flex justify-content-between btn-animated btn-2`}
                     style={{ backgroundColor: "#2E4A45" }}
                   >
                     <p className="mb-0 text-white">More about us</p>

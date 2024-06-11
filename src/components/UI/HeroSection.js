@@ -31,7 +31,7 @@ const HeroSection = () => {
                     </p>
                     <Link
                       href={"/contact"}
-                      className={`${style.btnHeroSection} `}
+                      className={`${style.btnHeroSection} btn-animated btn-1`}
                     >
                       <p className="mb-0">Work with us</p>
                       <svg

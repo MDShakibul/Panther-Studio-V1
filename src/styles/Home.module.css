@@ -150,9 +150,13 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    
   }
   .btnHeroSection p {
     font-size: 16px;
+    font-weight: 700 !important;
+    
   }
 
   .heroSectionCompanyTitle {
@@ -320,7 +324,7 @@
 .workDetails {
   color:  #2E4A45;
 font-size: 32px;
-font-style: normal;
+font-family: "PolySans Slim";
 font-weight: 300;
 line-height: 40px;
 letter-spacing: -0.64px;
@@ -366,3 +370,6 @@ letter-spacing: -0.48px;
   }
   
 }
+
+
+

@@ -24,7 +24,7 @@ const WhatWeDoHeroSection = () => {
   }, []);
   return (
     <>
-      <div className={`${style.heroBodyArea} h-100`}>
+      <div className={`${style.heroBodyArea} pb-0 h-100`}>
         <div className="container">
           <div className={`${style.heroSection} h-100`}>
             <div className={`row ${style.heroSectionArea}`}>
@@ -47,7 +47,7 @@ const WhatWeDoHeroSection = () => {
                       creativity and expertise to bring your vision to life
                       online.
                     </p>
-                    <Link href={""} className={`${style.btnHeroSection} `}>
+                    <Link href={""} className={`${style.btnHeroSection} btn-animated btn-1`}>
                       <p className="mb-0">Our Services</p>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +80,7 @@ const WhatWeDoHeroSection = () => {
           </div>
         </div>
       </div>
-      <div className={`${style.heroBodyArea} h-100`}>
+      <div className={`${style.heroBodyArea}  h-100`}>
         <div className="container">
           <div className={`${style.heroSection2} h-100`}>
             <div className={`row ${style.heroSectionArea}`}>
@@ -90,16 +90,16 @@ const WhatWeDoHeroSection = () => {
                     What do we actually create?
                   </p>
 
-                  <p
+                  <div
                     className={`${style.heroSectionTextDetails2} mb-4 mb-lg-0`}
                   >
-                    On the surface, it appears simple. But in reality — not so
-                    much. We can explain. <br />
-                    At Panther Creative Studio, we specialize in crafting
+                    <p>On the surface, it appears simple. But in reality — not so
+                    much. We can explain.</p>
+                    <p>At Panther Creative Studio, we specialize in crafting
                     bespoke websites that embody your brand&apos;s goals. Our
                     team blends creativity with technical prowess to deliver
-                    stunning, user-friendly experiences.
-                  </p>
+                    stunning, user-friendly experiences.</p>
+                  </div>
 
                   <div className={`${style.heroSectionBottomText}`}>
                     <p className={`${style.heroSectionTextDetails2}`}>

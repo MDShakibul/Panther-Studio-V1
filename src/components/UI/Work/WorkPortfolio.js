@@ -79,7 +79,7 @@ const WorkPortfolio = () => {
                 className={`${style.responsiveHeroImage} ${style.profileProjectImage}`}
               />
 
-              <div className={` ${style.profileProjectImageDetails}`}>
+              <div>
                 <h3 className={`${style.projectName}`}>Ok Medical</h3>
                 <p className={`${style.projectSummary}`}>
                   Tortor tempor pellentesque tortor urna. Cursus et sed sociis

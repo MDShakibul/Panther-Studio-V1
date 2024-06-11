@@ -31,7 +31,7 @@ const MoreInfo = () => {
         >
           <Link
             href={"/what-we-do"}
-            className={`text-white ${style.btnHeroSection} text-center `}
+            className={`text-white ${style.btnHeroSection} text-center btn-animated btn-2`}
             style={{ backgroundColor: "#2E4A45" }}
           >
             <p className="mb-0 text-white">Browse All services</p>

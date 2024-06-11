@@ -51,6 +51,8 @@
   .serviceHeaderTitle {
     width: 100% !important;
     padding-bottom: 40px;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 
   .serviceDiscriptionArea {
@@ -104,6 +106,9 @@
   border-radius: 4px;
   background: #e1eeec;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .priceInfoDetails p {
   color: #2e4a45;
@@ -148,6 +153,7 @@
     border-radius: 4px;
     background: #e1eeec;
     width: 100%;
+    
   }
   .priceInfoDetails p {
     color: #2e4a45;

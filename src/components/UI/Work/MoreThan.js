@@ -39,7 +39,7 @@ const MoreThan = () => {
             <Link
             href={"https://dribbble.com/pantherstudiocreations/"}
             target="_blank"
-            className={`text-white ${style.btnHeroSection} text-center `}
+            className={`text-white ${style.btnHeroSection} text-center btn-animated btn-2`}
             style={{ backgroundColor: "#2E4A45" }}
           >
             <p className="mb-0 text-white">Find us on dribbble</p>

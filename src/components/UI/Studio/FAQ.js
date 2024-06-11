@@ -44,7 +44,7 @@ const FAQ = () => {
               <div className="col-lg-3 d-flex justify-content-center align-items-center">
               <Link
             href={"/contact"}
-            className={`text-white ${style.btnHeroSection} text-center w-100`}
+            className={`text-white ${style.btnHeroSection} text-center w-100 btn-animated btn-2`}
             style={{ backgroundColor: "#2E4A45" }}
           >
             <p className="mb-0 text-white">Get in touch</p>

@@ -142,7 +142,7 @@ const StudioPartner = () => {
                   >
                     <Link
                       href={"/contact"}
-                      className={`${homeStyle.btnHeroSection} w-100 text-center d-flex justify-content-between`}
+                      className={`${homeStyle.btnHeroSection} w-100 text-center d-flex justify-content-between btn-animated btn-1`}
                     >
                       <p className="mb-0">Work with us</p>
                       <svg
